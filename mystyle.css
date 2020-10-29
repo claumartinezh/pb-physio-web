@@ -1,0 +1,75 @@
+body {
+  font-family: 'Cabin', serif;
+}
+header {
+  border-bottom: 2px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition-duration: 500ms;
+  z-index: 999;
+  background-color: rgba(21, 209, 200);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+  background-color: aquamarine;
+}
+nav ul {
+  font-size: 20px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav li {
+  margin: 0 4rem;
+}
+
+main {
+  margin-top: 130px;
+}
+
+.section-index {
+  height: 15px;
+}
+section {
+  position: relative;
+  z-index: 1;
+  padding: 80px 160px;
+  margin-top: 50px;
+  display: flex;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  width: 600px;
+}
+.foto {
+  border: 2px solid blue;
+  width: 400px;
+  height: 400px;
+}
+
+form {
+  font-family: 'Cabin', serif;
+  display: flex;
+  flex-direction: column;
+}
+input[type=text], input[type=submit], textarea {
+  font-family: 'Cabin', serif;
+  padding: 12px 20px;
+  font-size: 18px;
+}
+
+input[type=submit] {
+  margin: 18px;
+}
