@@ -17,10 +17,10 @@
       </div>
       <div class="nav-list box" id="nav-list">
         <ul>
-          <li><a href="#about">Sobre mí</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#prices">Precios</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#about" onclick="_displayMenu()">Sobre mí</a></li>
+          <li><a href="#services" onclick="_displayMenu()">Servicios</a></li>
+          <li><a href="#prices" onclick="_displayMenu()">Precios</a></li>
+          <li><a href="#contact" onclick="_displayMenu()">Contacto</a></li>
         </ul>
       </div>
       <div onclick="_displayMenu()" title="Menú principal" class="menu-button"><i class="material-icons">menu</i>
@@ -42,8 +42,8 @@
 
     <a name="services">&nbsp;</a>
     <section class="services">
-      <div class="text">
-        <h1>Servicios</h1>
+      <h1>Servicios</h1>
+      <div class="info-section">
         <ul>
           <li>Lorem ipsum dolor sit amet consectetur, adipiscing elit mollis.</li>
           <li>Vehicula mollis integer dictumst pretium, congue placerat vivamus.</li>
@@ -55,26 +55,22 @@
 
     <a name="prices">&nbsp;</a>
     <section>
-      <div class="text">
-        <h1>Precios</h1>
+      <h1>Precios</h1>
+      <div class="info-section">
         <div class="foto">precio</div>
       </div>
     </section>
 
     <a name="contact">&nbsp;</a>
     <section class="contact">
-      <div>
-        <h1>Contacto</h1>
-        <form action="" id="contact-form">
-          <input type="text" name="name" placeholder="Nombre">
-          <input type="text" name="mail" placeholder="Mail">
-          <input type="text" name="phone" placeholder="Teléfono">
-          <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
-
-          <input type="submit" value="Enviar">
-        </form>
-      </div>
-
+      <h1>Contacto</h1>
+      <form action="" id="contact-form">
+        <input type="text" name="name" placeholder="Nombre">
+        <input type="text" name="mail" placeholder="Mail">
+        <input type="text" name="phone" placeholder="Teléfono">
+        <textarea name="mensaje" placeholder="Tu mensaje" rows="4"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
     </section>
   </main>
 
