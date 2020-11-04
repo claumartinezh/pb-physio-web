@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="mystyle.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/iconsmind/outline/512/Brain-2-icon.png">
   <title>Fisioterapia | Paula Blanco</title>
 </head>
 <body>
@@ -13,29 +15,33 @@
       <div class="logo">
         <a href=""><img src="" width="45">logo</a>
       </div>
-      <ul>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#prices">Precios</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
+      <div class="nav-list box" id="nav-list">
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#prices">Precios</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div onclick="_displayMenu()" title="Menú principal" class="menu-button"><i class="material-icons">menu</i>
     </nav>
   </header>
 
   <main>
     <a name="about">&nbsp;</a>
     <section>
-      <div class="text">
-        <h1>Sobre mí</h1>
+      <h1>Sobre mí</h1>
+      <div class="info-section">
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vel, montes orci neque tellus nascetur suscipit cras cubilia placerat, eget vestibulum risus est ante himenaeos nibh. Volutpat aliquet tincidunt tristique hendrerit dapibus justo vestibulum, class at vitae conubia habitasse. Posuere quam iaculis donec blandit dui nullam, nisl hac a convallis congue, scelerisque penatibus integer diam accumsan.
-          Lorem ipsum dolor sit amet <p>consectetur adipiscing, elit risus netus fermentum cum ultricies ligula, morbi facilisis egestas praesent vivamus. Magnis fusce luctus potenti facilisis libero ligula interdum sociis, quisque etiam elementum iaculis cras ullamcorper netus feugiat, aptent eget convallis enim odio nec ridiculus. Pellentesque parturient nisi ullamcorper magna tincidunt tellus risus diam ac lobortis volutpat, est tortor imperdiet pulvinar viverra mauris mattis ad accumsan aenean, sagittis dui cursus non quam ante commodo dictum mollis etiam.
-          Convallis erat mus proin </p>
+          Lorem ipsum dolor sit amet consectetur<br><br> adipiscing, elit risus netus fermentum cum ultricies ligula, morbi facilisis egestas praesent vivamus. Magnis fusce luctus potenti facilisis libero ligula interdum sociis, quisque etiam elementum iaculis cras ullamcorper netus feugiat, aptent eget convallis enim odio nec ridiculus. Pellentesque parturient nisi ullamcorper magna tincidunt tellus risus diam ac lobortis volutpat, est tortor imperdiet pulvinar viverra mauris mattis ad accumsan aenean, sagittis dui cursus non quam ante commodo dictum mollis etiam.
+          Convallis erat mus proin
+        </p>
+        <div class="photo">Foto</div>
       </div>
-      <div class="foto">Foto</div>
     </section>
 
     <a name="services">&nbsp;</a>
-    <section>
+    <section class="services">
       <div class="text">
         <h1>Servicios</h1>
         <ul>
@@ -56,7 +62,7 @@
     </section>
 
     <a name="contact">&nbsp;</a>
-    <section>
+    <section class="contact">
       <div>
         <h1>Contacto</h1>
         <form action="" id="contact-form">
@@ -74,3 +80,23 @@
 
 </body>
 </html>
+
+<script>
+  function _displayMenu() {
+    var mobileMenu = document.getElementById('nav-list');
+
+    if (mobileMenu.classList.contains('hidden')) {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => mobileMenu.classList.remove('visually-hidden'), 20);
+    } else {
+      mobileMenu.classList.add('visually-hidden');
+      mobileMenu.addEventListener('transitionend', function(e) {
+        mobileMenu.classList.add('hidden');
+      }, {
+        capture: false,
+        once: true,
+        passive: false
+      });
+    }
+  }
+  </script>

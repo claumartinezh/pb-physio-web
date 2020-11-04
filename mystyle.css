@@ -1,63 +1,172 @@
 body {
   font-family: 'Cabin', serif;
+  background-color: #DCFAF7;
 }
+
 header {
-  border-bottom: 2px solid;
   position: fixed;
+  background-color: #1EC2B2;
   top: 0;
   left: 0;
   width: 100%;
+  color: #fff;
   transition-duration: 500ms;
   z-index: 999;
-  background-color: rgba(21, 209, 200);
+  min-height: 80px;
 }
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border: 1px solid aquamarine;
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 20px;
 }
-.logo {
-  width: 120px;
-  height: 120px;
-  background-color: aquamarine;
+
+.nav-list {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  margin-top: 0;
+  background: #199F91;
+  height: 90vh;
+  opacity: 0.9;
+  text-align: center;
+
 }
+
+.box {
+  width: 100%;
+  display: block;
+  transition: all 0.3s linear;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  opacity: 0;
+}
+
+.menu-button .material-icons{
+  color: #fff;
+  font-size: 36px;
+}
+
 nav ul {
-  font-size: 20px;
-  display: flex;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
+  font-size: 20px;
+  padding: 20px 0;
 }
 nav li {
-  margin: 0 4rem;
+  margin: 30px 0;
+}
+nav li a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav li a:visited {
+  color: inherit;
 }
 
 main {
-  margin-top: 130px;
+  margin-top: 50px;
 }
 
-.section-index {
-  height: 15px;
-}
 section {
-  position: relative;
   z-index: 1;
-  padding: 80px 160px;
-  margin-top: 50px;
-  display: flex;
   font-size: 18px;
   display: flex;
+  flex-direction: column;
+  padding: 20px;
   justify-content: space-between;
   align-items: center;
 }
-.text {
-  width: 600px;
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.foto {
-  border: 2px solid blue;
-  width: 400px;
-  height: 400px;
+
+.photo {
+  border: 2px solid #780C5F;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
+
+@media (min-width: 750px) {
+  .menu-button {
+    display: none;
+  }
+  .nav-list {
+    display: block;
+    background: none;
+    position: relative;
+    padding: 40px;
+    top: 0;
+    width: auto;
+    height: 20px;
+    transition: none;
+  }
+  .hidden {
+    display: block;
+  }
+  .visually-hidden {
+    opacity: 1;
+  }
+
+  nav ul {
+    font-size: 20px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    margin: 0;
+  }
+  nav li a {
+    margin: 0 4rem;
+  }
+
+  .section-index {
+    height: 15px;
+  }
+  section {
+    padding: 20px 160px;
+    margin-top: 50px;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  section.services, section.contact {
+    background-color: #CAF7F3;
+  }
+
+  .info-section {
+    flex-direction: row;
+  }
+
+  .info-section p {
+    width: 600px;
+    padding: 0 60px;
+  }
+
+  .photo {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 
 form {
   font-family: 'Cabin', serif;
