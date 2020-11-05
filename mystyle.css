@@ -77,6 +77,11 @@ nav li a {
 nav li a:visited {
   color: inherit;
 }
+nav li a:hover {
+  color: #C70499;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
 
 main {
   margin-top: 50px;
@@ -115,7 +120,9 @@ form {
   font-family: 'Cabin', serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
 input[type=text], input[type=submit], textarea {
   font-family: 'Cabin', serif;
   padding: 15px 10px;
@@ -123,6 +130,7 @@ input[type=text], input[type=submit], textarea {
   border: 2px solid #199F91;
   margin: 10px 0;
   border-radius: 5px;
+  width: 90%;
 }
 
 input[type=submit] {
@@ -130,6 +138,12 @@ input[type=submit] {
   background-color: #780c5f;
   color: #fff;
   border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #C70499;
+  transition: background-color 0.3s ease;
 }
 
 @media (min-width: 750px) {
@@ -199,5 +213,19 @@ input[type=submit] {
   .photo {
     width: 300px;
     height: 300px;
+  }
+
+  form div {
+    display: flex;
+    width: 95%;
+  }
+
+  input[type="text"] {
+    width: 240px;
+    margin: 15px;
+  }
+
+  textarea {
+    width: 89%;
   }
 }
