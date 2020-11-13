@@ -29,6 +29,13 @@ nav {
   padding: 5px 20px;
 }
 
+.nav-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
 .nav-list {
   position: absolute;
   top: 82px;
