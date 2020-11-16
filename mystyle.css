@@ -74,11 +74,11 @@ nav ul {
 }
 nav li {
   margin: 30px 0;
-  color: #fff;
 }
 nav li a {
   text-transform: uppercase;
   text-decoration: none;
+  color: #fff;
 }
 nav li a:visited {
   color: inherit;
@@ -188,7 +188,13 @@ section:nth-of-type(2), section:nth-of-type(4) {
   .menu-button {
     display: none;
   }
+  
+  nav {
+    display: flex;
+  }
+
   .nav-list {
+    flex-grow: 5;
     display: block;
     background: none;
     position: relative;
@@ -208,15 +214,18 @@ section:nth-of-type(2), section:nth-of-type(4) {
   nav ul {
     font-size: 20px;
     display: flex;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
   }
   nav li {
     margin: 0;
+    display: flex;
+    justify-content: center;
   }
-  nav li a {
+  /*nav li a {
     margin: 0 4rem;
-  }
+  }*/
 
   .section-index {
     height: 15px;
