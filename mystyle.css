@@ -7,6 +7,7 @@ body {
   margin: 0;
 }
 
+/* Menu navegacion */
 header {
   position: fixed;
   background-color: #00C8C8;
@@ -90,6 +91,7 @@ nav li a:hover {
   font-weight: bold;
 }
 
+/* Contenido pagina */
 main {
   margin-top: 120px;
 }
@@ -111,25 +113,70 @@ section {
   padding: 20px;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  line-height: 24px;
+}
+
+.title-info {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.title-info h1 {
+  text-transform: none;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+  line-height: 38px;
+}
+
+.title-info h2 {
+  color: #C70499;
+  font-size: 1.5em;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 38px;
+}
+
+.title-info p {
+  font-size: 20px;
+}
+
+p a {
+  color: #C70499;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+p a:hover {
+  opacity: 0.5;
 }
 
 section h1 {
   color: #C70499;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .info-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 }
 
 .photo {
   border: 2px solid #780C5F;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+}
+
+.media-section {
+  text-align: center;
+}
+
+.social-networks {
+  margin-top: 10px;
 }
 
 .contact-info {
@@ -168,6 +215,7 @@ section h1 {
   margin: 0;
 }
 
+/* Formulario */
 form {
   font-family: 'Cabin', serif;
   display: flex;
@@ -208,11 +256,12 @@ section:nth-of-type(2), section:nth-of-type(4) {
   background-color: #CAF7F3;
 }
 
+
 @media (min-width: 750px) {
   .menu-button {
     display: none;
   }
-  
+
   nav {
     display: flex;
   }
@@ -258,7 +307,6 @@ section:nth-of-type(2), section:nth-of-type(4) {
   }
   section {
     padding: 20px 160px;
-    margin-top: 50px;
     font-size: 20px;
     justify-content: space-between;
     align-items: center;
@@ -267,6 +315,7 @@ section:nth-of-type(2), section:nth-of-type(4) {
 
   section h1 {
     font-size: 2em;
+    margin-top: 60px;
   }
 
   .info-section {
@@ -275,13 +324,26 @@ section:nth-of-type(2), section:nth-of-type(4) {
   }
 
   .info-section p {
-    width: 600px;
+    width: 800px;
     padding: 0 60px;
   }
 
   .photo {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .social-networks {
+    margin-top: 20px;
+  }
+
+  .social-networks a {
+    opacity: 1;
+    transition: 0.3s ease;
+  }
+
+  .social-networks a:hover {
+    opacity: 0.5;
   }
 
   .contact-section {
