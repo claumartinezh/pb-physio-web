@@ -223,9 +223,6 @@ section:nth-of-type(2), section:nth-of-type(4) {
     display: flex;
     justify-content: center;
   }
-  /*nav li a {
-    margin: 0 4rem;
-  }*/
 
   .section-index {
     height: 15px;
