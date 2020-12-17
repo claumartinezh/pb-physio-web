@@ -113,7 +113,7 @@ section {
   padding: 20px;
   justify-content: space-between;
   align-items: center;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .title-info {
@@ -162,6 +162,15 @@ section h1 {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+}
+
+p .name {
+  font-weight: bold;
+  color: #C70499;
+}
+
+p .study {
+  color: #008080;
 }
 
 .photo {
@@ -372,5 +381,6 @@ section:nth-of-type(2), section:nth-of-type(4) {
 
   textarea {
     width: 90%;
+    max-width: 542px;
   }
 }
