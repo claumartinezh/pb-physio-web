@@ -50,7 +50,7 @@ body {
 .coming-soon .contact-card {
   flex-direction: column;
   font-size: 15px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .coming-soon .contact-card img {
