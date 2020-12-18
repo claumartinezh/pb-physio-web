@@ -7,6 +7,65 @@ body {
   margin: 0;
 }
 
+/* Coming soon page */
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20% auto;
+  padding: 40px;
+  border: 2px solid #008080;
+  background-color: azure;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.coming-soon img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.coming-soon h1 {
+  color: #008080;
+  font-size: 22px;
+}
+
+.coming-soon p {
+  margin: 0;
+}
+
+.coming-soon a {
+  color: #008080;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.coming-soon  a:hover {
+  opacity: 0.5;
+}
+
+.coming-soon .contact-card {
+  flex-direction: column;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.coming-soon .contact-card img {
+  width: 30px;
+  margin: 20px 0 10px 0;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.coming-soon .contact-card img:hover {
+  opacity: 0.5;
+}
+
+
+/* Landing  page*/
+
 header {
   position: fixed;
   background-color: #00C8C8;
@@ -209,10 +268,20 @@ section:nth-of-type(2), section:nth-of-type(4) {
 }
 
 @media (min-width: 750px) {
+
+  /* Coming soon page */
+  .coming-soon {
+    margin: 5% auto;
+    width: 600px;
+    font-size: 20px;
+  }
+
+
+  /* Landing page */
   .menu-button {
     display: none;
   }
-  
+
   nav {
     display: flex;
   }
