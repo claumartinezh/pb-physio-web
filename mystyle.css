@@ -21,7 +21,7 @@ header {
 }
 
 .logo {
-  width: 80px;
+  width: 90px;
 }
 
 nav {
@@ -40,7 +40,7 @@ nav {
 
 .nav-list {
   position: absolute;
-  top: 103px;
+  top: 120px;
   left: 0;
   margin-top: 0;
   background: #008080;
@@ -327,6 +327,13 @@ footer a:hover {
     display: none;
   }
 
+  .logo {
+    width: 100px;
+  }
+
+  main {
+    margin-top: 130px;
+  }
   nav {
     display: flex;
   }
