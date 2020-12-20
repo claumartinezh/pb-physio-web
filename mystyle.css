@@ -99,10 +99,9 @@ main {
 .summary {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background: white;
   margin: 0 auto;
-  padding-top: 20px;
+  padding: 20px 30px;
 }
 
 section {
@@ -211,8 +210,9 @@ p .study {
 }
 
 .contact-card img {
-  margin-right: 20px;
+  margin-right: 12px;
   width: 50px;
+  height: 50px;
 }
 
 .contact-card p {
@@ -222,6 +222,24 @@ p .study {
 .contact-card p:nth-of-type(1) {
   font-weight: bold;
   margin: 0;
+}
+
+#min-text {
+  font-size: 13px;
+}
+
+.contact-card p:nth-of-type(2), .contact-card p:nth-of-type(3) {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contact-card a {
+  display: flex;
+  color: #008080;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Formulario */
@@ -343,9 +361,14 @@ footer a:hover {
     justify-content: center;
   }
 
+  .summary .contact-card {
+    margin: 0;
+  }
+
   .section-index {
     height: 15px;
   }
+
   section {
     padding: 20px 160px;
     font-size: 20px;
@@ -363,6 +386,10 @@ footer a:hover {
     padding-bottom: 100px;
   }
 
+  .title-info {
+    padding: 0 60px;
+  }
+
   .info-section {
     flex-direction: row;
     text-align: left;
@@ -374,8 +401,8 @@ footer a:hover {
   }
 
   .photo {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
 
   .social-networks {
@@ -398,6 +425,10 @@ footer a:hover {
   .contact-card {
     width: 300px;
     margin-left: 20px;
+  }
+
+  #min-text {
+    font-size: 16px;
   }
 
   form {
