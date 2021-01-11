@@ -20,6 +20,14 @@ header {
   min-height: 80px;
 }
 
+header nav {
+  font-family: 'Poppins', serif;
+}
+
+nav h1 {
+  display: none;
+}
+
 .logo {
   width: 90px;
 }
@@ -101,7 +109,8 @@ main {
   flex-direction: column;
   background: white;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 20px 30px 0px 30px;
+  align-items: center;
 }
 
 section {
@@ -327,15 +336,20 @@ footer a:hover {
     display: none;
   }
 
-  .logo {
-    width: 120px;
-  }
-
-  main {
-    margin-top: 150px;
-  }
   nav {
     display: flex;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  header nav h1 {
+    display: inline;
+    font-size: 22px;
+    margin-left: 20px;
+    font-weight: normal;
+    min-width: 290px;
   }
 
   .nav-list {
@@ -343,7 +357,7 @@ footer a:hover {
     display: block;
     background: none;
     position: relative;
-    padding: 40px;
+    padding: 30px;
     top: 0;
     width: auto;
     height: 20px;
@@ -367,12 +381,17 @@ footer a:hover {
     margin: 0;
     display: flex;
     justify-content: center;
-    min-width: 150px;
+    min-width: 130px;
+  }
+
+  main {
+    margin-top: 160px;
   }
 
   .summary {
     flex-direction: row;
     justify-content: center;
+    padding: 30px;
   }
 
   .summary .contact-card {
