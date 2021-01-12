@@ -172,7 +172,7 @@ section h1 {
   align-items: center;
 }
 
-p .name {
+.name {
   font-weight: bold;
   color: #C70499;
 }
@@ -330,6 +330,103 @@ footer a:hover {
   width: inherit;
 }
 
+/* Tabs */
+.tabs {
+  overflow: hidden;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: 'Cabin';
+  margin: 5px;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
+.tabs button:hover {
+  background-color: #00E0E0;
+}
+
+.tabs .tablinks {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #000;
+  background: #00C8C8;
+  margin: 0 5px 0 0;
+}
+
+.tabs .tablinks span {
+  display: none;
+}
+
+.tabs button.active {
+  background-color: #FFF;
+  color: #000;
+}
+
+.tabcontent {
+  font-family: 'Cabin';
+  display: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border-top-left-radius: unset;
+  background: #fff;
+  padding: 2% 4%;
+  text-align: left;
+  font-size: 18px;
+  box-shadow: 12px 12px 12px -20px #006D6D;
+}
+
+.tabcontent h2 {
+  color: #008080;
+}
+
+.tabcontent p.name {
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 35px;
+  border: 2px solid #C70499;
+  border-radius: 5px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.tabcontent p.name:hover {
+  background-color: #FFEEFB;
+}
+
+.tabcontent ul {
+  list-style: none;
+  padding: 0;
+  color: #008080;
+  text-align: center;
+}
+
+.tabcontent ul > li {
+  display: inline;
+  line-height: 35px;
+}
+
+.tabcontent ul li:not(:last-child)::after {
+  margin: 20px;
+  content: "·";
+}
+
 
 @media (min-width: 750px) {
   .menu-button {
@@ -403,7 +500,7 @@ footer a:hover {
   }
 
   section {
-    padding: 20px 160px;
+    padding: 20px 160px 50px;
     font-size: 20px;
     justify-content: space-between;
     align-items: center;
@@ -420,7 +517,7 @@ footer a:hover {
   }
 
   .title-info {
-    padding: 0 60px;
+    padding: 0 130px;
   }
 
   .info-section {
@@ -462,6 +559,10 @@ footer a:hover {
 
   #min-text {
     font-size: 16px;
+  }
+
+  .tabs .tablinks span {
+    display: block;
   }
 
   form {

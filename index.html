@@ -107,13 +107,107 @@
     <a name="services">&nbsp;</a>
     <section>
       <h1>Servicios</h1>
-      <div class="info-section">
+      <div class="tabs">
+        <button class="tablinks active" onclick="selectTab(event, 'neuro')"><img src="img/brain.svg" alt="brain-icon" width="32px"><span>Fisioterapia neurológica</span></button>
+        <button class="tablinks" onclick="selectTab(event, 'infantil')"><img src="img/kid.svg" alt="kid-icon" width="32px"><span>Fisioterapia infantil</span></button>
+        <button class="tablinks" onclick="selectTab(event, 'respiratoria')"><img src="img/lungs.svg" alt="lungs-icon" width="32px"><span>Fisioterapia respiratoria</span></button>
+        <button class="tablinks" onclick="selectTab(event, 'online')"><img src="img/doctor.svg" alt="online-icon" width="32px"><span>Consultas online</span></button>
+      </div>
+
+      <div id="neuro" class="tabcontent" style="display: block;">
+        <h2>Fisioterapia neurológica</h2>
+        <p>
+          Se centra en la rehabilitación de personas con alteración neurológica, buscando adquirir una mayor autonomía e independencia de las actividades de 
+          la vida diaria, mediante técnicas como el método Bobath, el ejercicio terapéutico cognoscitivo, el ejercicio terapéutico, entrenamiento de fuerza, 
+          técnicas manuales, punción seca, reeducación de la marcha... Sus objetivos incluyen reducir los síntomas provocados por el daño nervioso, entre 
+          ellos: dolor, rigidez, pérdida de movilidad, alteración sensitiva, alteraciones del equilibrio y coordinación, buscando una mejor calidad de vida 
+          de los pacientes.
+        </p>
+        <p>
+          Sus beneficios son notables en patologías como ictus, esclerosis múltiple, esclerosis lateral amiotrófica, lesión medular, enfermedades poco 
+          frecuentes con afectación musculoesquelética y otras enfermedades neurodegenerativas.
+        </p>
+        <p class="name">
+          Valoramos la situación de cada paciente para adaptar las sesiones de fisioterapia a su condición actual, marcamos objetivos concretos y motivacionales 
+          para una mejor adherencia al tratamiento.
+        </p>
+      </div>
+
+      <div id="infantil" class="tabcontent">
+        <h2>Fisioterapia infantil</h2>
+        <p>
+          Se centra en el tratamiento y estimulación de bebes, niños y adolescentes, favoreciendo un adecuado desarrollo psicomotor y un mayor nivel funcional. 
+          Desde nuestro punto de vista, el trabajo centrado en la familia es la mejor opción para cubrir las necesidades que se puedan presentar, y dar un apoyo 
+          constante al crecimiento del niño. Implica una mejora sensitiva y motora que suele ir acompañada de progreso en el desarrollo cognitivo e intelectual.
+        </p>
+        <p>
+          Es efectiva en niños con parálisis cerebral infantil, síndrome de Down, atrofia muscular espinal, síndrome de Duchenne, enfermedades poco frecuentes, 
+          alteraciones en el neurodesarrollo, niños prematuros…dando lugar a la mejora en la motricidad gruesa y fina, coordinación, equilibrio e interacción con 
+          el entorno entre otros.
+        </p>
+        <p class="name">
+          Todos nuestros tratamientos incluyen una valoración inicial con unos objetivos a corto y largo plazo, dando lugar a un plan de intervención individual, 
+          también trabajamos con pautas a familias y cuidadores buscando intensificar la terapia y obtener mejores resultados.
+        </p>
+
+      </div>
+
+      <div id="respiratoria" class="tabcontent">
+        <h2>Fisioterapia respiratoria</h2>
+        <p>
+          Esta especialidad ayuda a la prevención y a reducir la sintomatología respiratoria de niños y adultos con numerosas afecciones entre las que se encuentran:
+        </p>
         <ul>
-          <li>Lorem ipsum dolor sit amet consectetur, adipiscing elit mollis.</li>
-          <li>Vehicula mollis integer dictumst pretium, congue placerat vivamus.</li>
-          <li>Tempor iaculis tristique class euismod sociis, lobortis aliquet conubia leo.</li>
-          <li>Neque tristique sed natoque congue dui elementum, porttitor a molestie facilisis.</li>
+          <li>Bronquiolitis</li>
+          <li>Bronquitis</li>
+          <li>Discinesiaciliar primaria</li>
+          <li>Displasia broncopulmonar</li>
+          <li>Prematuros</li>
+          <li>EPOC</li>
+          <li>Bronquiectasias</li>
+          <li>Neumonías</li>
+          <li>Atelectasias</li>
+          <li>Asma</li>
+          <li>Trasplante pulmonar</li>
+          <li>Fibrosis quística</li>
+          <li>Enfermedades neurológicas y neuromusculares</li>
+          <li>Procesos oncológicos y degenerativos</li>
+          <li>Alteraciones torácicas</li>
         </ul>
+        <p>
+          Consta de un gran número de técnicas cuyos objetivos son: el transporte de secreciones y evacuación de las mismas en niños y adultos con problemas 
+          para eliminarlas, reeducación del patrón respiratorio para reducir la sensación de cansancio y dificultad respiratoria, rehabilitación pulmonar en 
+          aquellos casos que necesiten volver a adquirir seguridad durante el ejercicio físico, mejorar la función pulmonar, reducir broncoespasmo, entre otras, 
+          todo ello conlleva a un correcto funcionamiento pulmonar, así como reducir el riesgo de infecciones e ingresos hospitalarios.
+        </p>
+        <p>
+          En niños pequeños, debido a la inmadurez de su sistema respiratorio, y sobre todo en los meses de invierno, nos encontramos con episodios de 
+          hipersecreciones susceptibles de tratamiento, para prevenir complicaciones.
+        </p>
+        <p>
+          Estas técnicas también son efectivas tras COVID-19, dado que favorecen la recuperación de la función pulmonar y revierten síntomas como la fatiga 
+          y la disnea, ayudando a mejorar la capacidad funcional.
+        </p>
+        <p>
+          Realizamos programas de rehabilitación pulmonar para pacientes con EPOC, que son adaptados y progresivos, y que consiguen mejorar en gran medida 
+          su sintomatología y calidad de vida.
+        </p>
+        <p class="name">
+          Utilizamos técnicas actualizadas y basadas en la evidencia científica, ello permite ver mejoras en la misma sesión además para nosotros es importante 
+          la educación a los familiares y pacientes de forma que entiendan la terapia y puedan mantener los efectos de la misma durante un largo periodo de tiempo.
+        </p>
+      </div>
+
+      <div id="online" class="tabcontent">
+        <h2>Consultas online</h2>
+        <p>
+          Este servicio está pensado para personas que residen fuera de Burgos o no tienen acceso a las terapias. Pretende ser un apoyo y guía para familiares 
+          en esta situación. Las nuevas tecnologías nos permiten conectar y realizar una valoración de cada caso, con ello podemos proponer pautas y recursos 
+          que puedan ayudaros.
+        </p>
+        <p class="name">
+          Estamos deseando conoceros, no dudéis en solicitar información y exponer vuestras inquietudes.
+        </p>
       </div>
     </section>
 
@@ -206,5 +300,19 @@
         passive: false
       });
     }
+  }
+
+  function selectTab(ev, service) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(service).style.display = "block";
+    ev.currentTarget.className += " active";
   }
   </script>
