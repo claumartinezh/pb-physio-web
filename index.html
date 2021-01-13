@@ -14,7 +14,7 @@
   <header>
     <nav>
       <a class="nav-a" href=""><img src="./img/logo400.png" class="logo" alt="banner-logo"></a>
-      <h1>Paula Blanco,<br> fisioterapia neurológica y respiratoria</h1>
+      <h1>Paula Blanco<br> fisioterapia neurológica y respiratoria</h1>
       <div class="nav-list box hidden" id="nav-list">
         <ul>
           <li><a href="#about" onclick="_displayMenu()">Sobre mí</a></li>
@@ -280,7 +280,20 @@
   <a href="https://www.cpfcyl.com/" target="_blank"><div class="footer-image"><img src="./img/fisioterapia_cyl.svg" alt="logo-fisioterapeutas-cyl"></div></a>
   <a href="https://www.separ.es/" target="_blank"><div class="footer-image"><img src="./img/separ.png" alt="logo-separ"></div></a>
   <a href="https://centroeqilibrio.com/" target="_blank"><div class="footer-image"><img src="./img/eqilibrio.png" alt="logo-centro-eqilibrio"></div></a>
+  <ul class="policy">
+    <li><a href="">Política de Privacidad</a></li>
+    <li><a href="">Política de Cookies</a></li>
+  </ul>
 </footer>
+
+<div id="snackbar" class="toast">
+  <p>
+    Utilizamos cookies propias y de terceros para mejorar nuestros servicios y realizar el análisis de sus hábitos de navegación. Si continúa navegando, 
+    consideramos que acepta su uso. Puede cambiar la configuración de su navegador u obtener más información sobre las cookies a través nuestra 
+    <a href="">Política de Cookies</a>.
+  </p>
+  <button onclick="acceptCookies()">Acepto</button>
+</div>
 </html>
 
 <script>
@@ -314,5 +327,10 @@
     }
     document.getElementById(service).style.display = "block";
     ev.currentTarget.className += " active";
+  }
+
+  function acceptCookies() {
+    var cookiesMessage = document.getElementById("snackbar");
+    cookiesMessage.className = "hide";
   }
   </script>
