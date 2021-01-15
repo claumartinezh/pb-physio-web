@@ -255,6 +255,7 @@ p .study {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Formulario */
@@ -465,6 +466,20 @@ footer a:hover {
   cursor: pointer;
 }
 
+.cookies-content {
+  height: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.cookies-content-active {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  height: auto;
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
 @media (min-width: 750px) {
   .menu-button {
     display: none;
@@ -542,6 +557,10 @@ footer a:hover {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+  }
+
+  section.legal {
+    text-align: left;
   }
 
   section h1 {

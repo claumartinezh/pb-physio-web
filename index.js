@@ -34,3 +34,8 @@ function acceptCookies() {
   var cookiesMessage = document.getElementById("snackbar");
   cookiesMessage.className = "hide";
 }
+
+function openCookies(ev) {
+  var cookiesContent = document.getElementById('cookies-content');
+  cookiesContent.className = cookiesContent.className.includes('active') ? 'cookies-content' : 'cookies-content-active';
+}
