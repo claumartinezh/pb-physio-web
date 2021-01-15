@@ -37,16 +37,16 @@
         </div>
       </div>
       <div class="contact-card">
-        <a href="tel:+34622237396">
+        <a href="tel:+34644210573">
           <img src="./img/phone.svg" alt="phone-icon">
           <div>
             <p>Teléfono</p>
-            <p>622 23 73 96</p>
+            <p>644 21 05 73</p>
           </div>
         </a>
       </div>
       <div class="contact-card">
-        <a href="mailto:info@paulablancofisioterapia.com">
+        <a href="mailto:info@paulablancofisioterapia.com?subject=Contacto a través de la pagina">
         <img src="./img/email.svg" alt="email-icon">
           <div>
             <p>Email</p>
@@ -174,7 +174,7 @@
         </ul>
         <h3>Beneficios</h3>
         <p>
-          Es efectiva en
+          La fisioterapia infantil favorece el desarrollo en niños/as con
         </p>
         <ul>
           <li>Parálisis cerebral infantil</li>
@@ -218,7 +218,7 @@
         </p>
         <h3>Beneficios</h3>
         <p>
-          Es efectiva contra
+          Sus beneficios son notables en patologías como
         </p>
         <ul>
           <li>Bronquiolitis</li>
@@ -277,7 +277,7 @@
             </div>
           </div>
           <div class="contact-card">
-            <a href="mailto:info@paulablancofisioterapia.com">
+            <a href="mailto:info@paulablancofisioterapia.com?subject=Contacto a través de la pagina">
               <img src="./img/email.svg" alt="email-icon">
               <div>
                 <p>Email</p>
@@ -286,11 +286,11 @@
             </a>
           </div>
           <div class="contact-card">
-            <a href="tel:+34622237396">
+            <a href="tel:+34644210573">
               <img src="./img/phone.svg" alt="phone-icon">
               <div>
                 <p>Teléfono</p>
-                <p>622 23 73 96</p>
+                <p>644 21 05 73</p>
               </div>
             </a>
           </div>
@@ -304,7 +304,7 @@
             </a>
           </div>
           <div class="contact-card">
-            <a href="https://goo.gl/maps/nB9joxqU8t6tg5QEA" target="_blank">
+            <a href="https://goo.gl/maps/JqwTzVWeLkfJXJMc6" target="_blank">
               <img src="./img/location.svg" alt="location-icon">
               <div>
                 <p>Centro eQilibrio</p>
@@ -315,37 +315,37 @@
           </div>
         </div>
 
-        <form action="" id="contact-form">
+        <form enctype="text/plain" method="POST" action="mailto:info@paulablancofisioterapia.com?subject=Contacto a través de la pagina" id="contact-form">
           <div>
-            <input type="text" name="name" placeholder="Nombre">
-            <input type="text" name="mail" placeholder="Mail">
-            <input type="text" name="phone" placeholder="Teléfono">
+            <input type="text" name="Nombre" placeholder="Nombre">
+            <input type="text" name="%0ACorreo" placeholder="Mail">
+            <input type="text" name="%0ATelefono" placeholder="Teléfono">
           </div>
-          <textarea name="mensaje" placeholder="Tu mensaje" rows="4"></textarea>
+          <textarea name="%0AMensaje" placeholder="Tu mensaje" rows="4"></textarea>
           <input type="submit" value="Enviar">
         </form>
       </div>
     </section>
   </main>
 
+  <footer>
+    <a href="https://www.cpfcyl.com/" target="_blank"><div class="footer-image"><img src="./img/fisioterapia_cyl.svg" alt="logo-fisioterapeutas-cyl"></div></a>
+    <a href="https://www.separ.es/" target="_blank"><div class="footer-image"><img src="./img/separ.png" alt="logo-separ"></div></a>
+    <a href="https://centroeqilibrio.com/" target="_blank"><div class="footer-image"><img src="./img/eqilibrio.png" alt="logo-centro-eqilibrio"></div></a>
+    <ul class="policy">
+      <li><a href="privacy.html">Política de Privacidad</a></li>
+      <li><a href="legal-advice.html">Aviso legal</a></li>
+      <li><a href="cookies.html">Política de Cookies</a></li>
+    </ul>
+  </footer>
+  <div id="snackbar" class="toast">
+    <p>
+      Utilizamos cookies propias y de terceros para mejorar nuestros servicios y realizar el análisis de sus hábitos de navegación. Si continúa navegando, 
+      consideramos que acepta su uso. Puede cambiar la configuración de su navegador u obtener más información sobre las cookies a través nuestra 
+      <a href="cookies.html">Política de Cookies</a>.
+    </p>
+    <button onclick="acceptCookies()">Acepto</button>
+  </div>
 </body>
-<footer>
-  <a href="https://www.cpfcyl.com/" target="_blank"><div class="footer-image"><img src="./img/fisioterapia_cyl.svg" alt="logo-fisioterapeutas-cyl"></div></a>
-  <a href="https://www.separ.es/" target="_blank"><div class="footer-image"><img src="./img/separ.png" alt="logo-separ"></div></a>
-  <a href="https://centroeqilibrio.com/" target="_blank"><div class="footer-image"><img src="./img/eqilibrio.png" alt="logo-centro-eqilibrio"></div></a>
-  <ul class="policy">
-    <li><a href="privacy.html">Política de Privacidad</a></li>
-    <li><a href="legal-advice.html">Aviso legal</a></li>
-    <li><a href="cookies.html">Política de Cookies</a></li>
-  </ul>
-</footer>
 
-<div id="snackbar" class="toast">
-  <p>
-    Utilizamos cookies propias y de terceros para mejorar nuestros servicios y realizar el análisis de sus hábitos de navegación. Si continúa navegando, 
-    consideramos que acepta su uso. Puede cambiar la configuración de su navegador u obtener más información sobre las cookies a través nuestra 
-    <a href="cookies.html">Política de Cookies</a>.
-  </p>
-  <button onclick="acceptCookies()">Acepto</button>
-</div>
 </html>
