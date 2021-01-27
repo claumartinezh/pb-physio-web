@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="ess">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="mystyle.css">
+  <script type="text/javascript" src="index.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="shortcut icon" href="./img/logo-banner.png">
-  <title>Fisioterapia | Paula Blanco</title>
+  <link rel="shortcut icon" href="./img/logo400.png">
+  <title>Paula Blanco | Fisioterapia</title>
 </head>
 <body>
   <header>
     <nav>
-      <a class="nav-a" href=""><img src="./img/logo400.png" class="logo" alt="banner-logo"></a>
-      <div class="nav-list box" id="nav-list">
+      <a class="nav-a" href="#"><img src="./img/logo400.png" class="logo" alt="banner-logo"></a>
+      <h1>Paula Blanco<br> fisioterapia neurológica y respiratoria</h1>
+      <div class="nav-list box hidden" id="nav-list">
         <ul>
           <li><a href="#about" onclick="_displayMenu()">Sobre mí</a></li>
           <li><a href="#services" onclick="_displayMenu()">Servicios</a></li>
-          <li><a href="#prices" onclick="_displayMenu()">Precios</a></li>
           <li><a href="#contact" onclick="_displayMenu()">Contacto</a></li>
         </ul>
       </div>
@@ -35,51 +37,230 @@
         </div>
       </div>
       <div class="contact-card">
-        <img src="./img/email.svg" alt="email-icon">
-        <div>
-          <p>Email</p>
-          <p>miemail@email.com</p>
-        </div>
+        <a href="tel:+34644210573">
+          <img src="./img/phone.svg" alt="phone-icon">
+          <div>
+            <p>Teléfono</p>
+            <p>644 21 05 73</p>
+          </div>
+        </a>
       </div>
       <div class="contact-card">
-        <img src="./img/phone.svg" alt="phone-icon">
-        <div>
-          <p>Teléfono</p>
-          <p>600000000</p>
-        </div>
+        <a href="mailto:info@paulablancofisioterapia.com?subject=Contacto a través de la página">
+        <img src="./img/email.svg" alt="email-icon">
+          <div>
+            <p>Email</p>
+            <p>info@paulablancofisioterapia.com</p>
+          </div>
+        </a>
       </div>
     </div>
+    <section class="title-info">
+      <h1>Fisioterapia neurológica y respiratoria,</h1>
+      <h2>a tu alcance en Burgos.</h2>
+      <p>
+        Para nosotros lo importante es adaptarnos a tu situación, por ello, ofrecemos tratamiento en el <a href="https://centroeqilibrio.com/" target="_blank"><b>centro Eqilibrio</b></a> y <a href="#"><b>servicio a domicilio</b></a> para realizar la terapia de la forma más efectiva posible.
+      </p>
+      <p>Amplia formación y experiencia en patologías neurológicas y respiratorias de niños y adultos.</p>
+      <p>Estamos esperando conocerte, no dudes en <a href="#contact">contactar con nosotros</a>.</p>
+
+    </section>
     <a name="about">&nbsp;</a>
     <section>
       <h1>Sobre mí</h1>
       <div class="info-section">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vel, montes orci neque tellus nascetur suscipit cras cubilia placerat, eget vestibulum risus est ante himenaeos nibh. Volutpat aliquet tincidunt tristique hendrerit dapibus justo vestibulum, class at vitae conubia habitasse. Posuere quam iaculis donec blandit dui nullam, nisl hac a convallis congue, scelerisque penatibus integer diam accumsan.
-          Lorem ipsum dolor sit amet consectetur<br><br> adipiscing, elit risus netus fermentum cum ultricies ligula, morbi facilisis egestas praesent vivamus. Magnis fusce luctus potenti facilisis libero ligula interdum sociis, quisque etiam elementum iaculis cras ullamcorper netus feugiat, aptent eget convallis enim odio nec ridiculus. Pellentesque parturient nisi ullamcorper magna tincidunt tellus risus diam ac lobortis volutpat, est tortor imperdiet pulvinar viverra mauris mattis ad accumsan aenean, sagittis dui cursus non quam ante commodo dictum mollis etiam.
-          Convallis erat mus proin
-        </p>
-        <div class="photo">Foto</div>
+        <div>
+          <p>
+            Soy <span class="name">Paula Blanco</span>, estudié el <span class="study">Grado en Fisioterapia</span>, en la Universidad de Valladolid, 
+            realizando la <span class="study">mención en pediatría</span>, por mi interés en mejorar atención fisioterápica de los más pequeños. Tras terminar el Grado, 
+            me trasladé a Madrid para realizar el <span class="study">Máster de Fisioterapia Respiratoria y Cardiaca</span> en la Universidad Autónoma de Madrid, y el <span class="study">Experto 
+            en Fisioterapia neurológica</span> de la Universidad Complutense de Madrid, ambos me han permitido especializarme en estos campos, para la atención 
+            de niños y adultos con patologías respiratorias y neurológicas, y adquirir competencias específicas y mejorar mis conocimientos dentro de estos campos.
+          </p>
+          <p>
+            Mi experiencia laboral empieza en 2016, desde entonces he trabajado en el ámbito de la Educación Especial y en centros de atención asistencial 
+            especializados en afecciones neurológicas. También he colaborado con ellos, realizando talleres para padres y cuidadores, con el objetivo de 
+            acercar estas especializaciones de fisioterapia a sus hogares, haciendo hincapié en la intervención centrada en la familia.
+          </p>
+          <p>
+            Además he seguido formándome para mantenerme actualizada dentro de mi profesión. Por otra parte, combino mi labor asistencial con la investigación, 
+            realizando actualmente el <span class="study">doctorado de Cuidados en Salud</span> de la Universidad Complutense de Madrid, realizando un proyecto sobre <span class="study">fisioterapia 
+            respiratoria infantil en Fibrosis quística</span>.
+          </p>
+          <p>
+            Estoy colegiada en el colegio de fisioterapeutas de Castilla y León, nº 3132. Pertenezco a la Sociedad española de neumología y cirugía torácica, SEPAR.
+          </p>
+          <p>
+            Este proyecto nace con la ilusión de acercar la fisioterapia neurológica y respiratoria de calidad a la ciudad de Burgos, tanto en el ámbito 
+            clínico como domiciliario, con prácticas centradas en el entorno de los pacientes y con un apoyo directo a familiares y cuidadores.
+          </p>
+        </div>
+        <div class=media-section>
+          <div class="photo">Foto</div>
+          <div class="social-networks">
+            <a href="https://www.instagram.com/pblancofisio/" target="_blank"><img src="./img/instagram-purple.svg" alt="instagram-icon"></a>
+            <a href="https://www.linkedin.com/in/paula-blanco-orive-417335107/" target="_blank"><img src="./img/linkedin-purple.svg" alt="linkedin-icon"></a>
+          </div>
+        </div>
       </div>
     </section>
 
     <a name="services">&nbsp;</a>
     <section>
       <h1>Servicios</h1>
-      <div class="info-section">
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur, adipiscing elit mollis.</li>
-          <li>Vehicula mollis integer dictumst pretium, congue placerat vivamus.</li>
-          <li>Tempor iaculis tristique class euismod sociis, lobortis aliquet conubia leo.</li>
-          <li>Neque tristique sed natoque congue dui elementum, porttitor a molestie facilisis.</li>
-        </ul>
+      <div class="tabs">
+        <button class="tablinks active" onclick="selectTab(event, 'neuro')"><img src="img/brain.svg" alt="brain-icon" width="32px"><span>Fisioterapia neurológica</span></button>
+        <button class="tablinks" onclick="selectTab(event, 'infantil')"><img src="img/kid.svg" alt="kid-icon" width="32px"><span>Fisioterapia infantil</span></button>
+        <button class="tablinks" onclick="selectTab(event, 'respiratoria')"><img src="img/lungs.svg" alt="lungs-icon" width="32px"><span>Fisioterapia respiratoria</span></button>
+        <button class="tablinks" onclick="selectTab(event, 'online')"><img src="img/doctor.svg" alt="online-icon" width="32px"><span>Consultas online</span></button>
       </div>
-    </section>
 
-    <a name="prices">&nbsp;</a>
-    <section>
-      <h1>Precios</h1>
-      <div class="info-section">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vel, montes orci neque tellus nascetur suscipit cras cubilia placerat, eget vestibulum risus</p>
-        <p> est ante himenaeos nibh. Volutpat aliquet tincidunt tristique hendrerit dapibus justo vestibulum, class at vitae conubia habitasse.</p>
+      <div id="neuro" class="tabcontent" style="display: block;">
+        <h2>Fisioterapia neurológica</h2>
+        <h3>¿Qué es?</h3>
+        <p>
+          Se centra en la rehabilitación de personas con alteración neurológica, buscando adquirir una mayor autonomía e independencia de las 
+          actividades de la vida diaria, mediante técnicas como el Método Bobath, ejercicio terapéutico cognoscitivo, ejercicio 
+          terapéutico, entrenamiento de fuerza, técnicas manuales, punción seca, reeducación de la marcha...
+        </p>
+        <h3>Objetivos</h3>
+        <p>
+          Sus objetivos incluyen reducir los síntomas provocados por el daño nervioso, buscando una mejor calidad de vida de los pacientes. 
+          Entre ellos se encuentran:
+        </p>
+        <ul>
+          <li>Dolor</li>
+          <li>Rigidez</li>
+          <li>Pérdida de movilidad</li>
+          <li>Alteración sensitiva</li>
+          <li>Alteraciones del equilibrio y coordinación</li>
+        </ul>
+        <h3>Beneficios</h3>
+        <p>
+          Sus beneficios son notables en patologías como:
+        </p>
+        <ul>
+          <li>Ictus</li>
+          <li>Esclerosis Múltiple</li>
+          <li>Esclerosis Lateral Amiotrófica</li>
+          <li>Lesión Medular</li>
+          <li>Enfermedades poco frecuentes con afectación musculoesquelética</li>
+          <li>Otras enfermedades neurodegenerativas</li>
+        </ul>
+        <p class="name">
+          Valoramos la situación de cada paciente para adaptar las sesiones de fisioterapia a su condición actual, marcamos objetivos concretos y motivacionales 
+          para una mejor adherencia al tratamiento.
+        </p>
+      </div>
+
+      <div id="infantil" class="tabcontent">
+        <h2>Fisioterapia infantil</h2>
+        <h3>¿Qué es?</h3>
+        <p>
+          Se centra en el tratamiento y estimulación de bebés, niños y adolescentes, favoreciendo un adecuado desarrollo psicomotor y un mayor nivel funcional.
+        </p>
+        <p>
+          Desde nuestro punto de vista, el trabajo centrado en la familia es la mejor opción para cubrir las necesidades que se puedan presentar y dar un apoyo 
+          constante al crecimiento del niño.
+        </p>
+        <h3>Objetivos</h3>
+        <ul>
+          <li>Mejora en la motricidad gruesa y fina</li>
+          <li>Coordinación</li>
+          <li>Equilibrio</li>
+          <li>Interacción con el entorno</li>
+          <li>Mejora sensitiva y motora</li>
+          <li>Progreso del desarrollo cognitivo e intelectual</li>
+        </ul>
+        <h3>Beneficios</h3>
+        <p>
+          La fisioterapia infantil favorece el desarrollo en niños/as con:
+        </p>
+        <ul>
+          <li>Parálisis cerebral infantil</li>
+          <li>Síndrome de Down</li>
+          <li>Atrofia muscular espinal</li>
+          <li>Síndrome de Duchenne</li>
+          <li>Enfermedades poco frecuentes</li>
+          <li>Alteraciones en el neurodesarrollo</li>
+          <li>Niños prematuros</li>
+          <li>Otras patologías</li>
+        </ul>
+        <p class="name">
+          Todos nuestros tratamientos incluyen una valoración inicial con unos objetivos a corto y largo plazo, dando lugar a un plan de intervención individual, 
+          también trabajamos con pautas a familias y cuidadores buscando intensificar la terapia y obtener mejores resultados.
+        </p>
+      </div>
+
+      <div id="respiratoria" class="tabcontent">
+        <h2>Fisioterapia respiratoria</h2>
+        <h3>¿Qué es?</h3>
+        <p>
+          Esta especialidad trata de prevenir y reducir la sintomatología respiratoria de lactantes, niños y adultos, dando lugar a una mejora en la calidad de vida.
+        </p>
+        <p>
+          Consta de un gran número de técnicas entre las que se incluyen: lavados nasales, transporte de secreciones y evacuación de las mismas, reeducación del 
+          patrón respiratorio, rehabilitación pulmonar…
+        </p>
+        <h3>Objetivos</h3>
+        <ul>
+          <li>Reducir la sensación de cansancio y dificultad respiratoria</li>
+          <li>Expectoración</li>
+          <li>Mejorar la higiene bronquial</li>
+          <li>Volver a adquirir seguridad durante el ejercicio físico</li>
+          <li>Mejorar la función pulmonar</li>
+          <li>Reducir broncoespasmo</li>
+          <li>Reducir el riesgo de infecciones e ingresos hospitalarios</li>
+        </ul>
+        <p>
+          En niños pequeños, debido a la inmadurez de su sistema respiratorio, y sobre todo en los meses de invierno, nos encontramos con episodios de 
+          hipersecreciones susceptibles de tratamiento, para prevenir complicaciones.
+        </p>
+        <h3>Beneficios</h3>
+        <p>
+          Sus beneficios son notables en patologías como:
+        </p>
+        <ul>
+          <li>Bronquiolitis</li>
+          <li>Bronquitis</li>
+          <li>Discinesia Ciliar primaria</li>
+          <li>Displasia broncopulmonar</li>
+          <li>Prematuros</li>
+          <li>EPOC</li>
+          <li>Bronquiectasias</li>
+          <li>Neumonías</li>
+          <li>Atelectasias</li>
+          <li>Asma</li>
+          <li>Trasplante pulmonar</li>
+          <li>Fibrosis quística</li>
+          <li>Enfermedades neurológicas y neuromusculares</li>
+          <li>Procesos oncológicos y degenerativos</li>
+          <li>Alteraciones torácicas</li>
+        </ul>
+        <p>
+          Estas técnicas también son efectivas tras Covid-19, dado que favorecen la recuperación de la función pulmonar y revierten síntomas como la fatiga y la disnea, 
+          ayudando a mejorar la capacidad funcional.
+        </p>
+        <p>
+          Realizamos programas de rehabilitación pulmonar para pacientes con EPOC, que son adaptados y progresivos, y que consiguen mejorar en gran medida su sintomatología 
+          y calidad de vida.
+        </p>
+        <p class="name">
+          Utilizamos técnicas actualizadas y basadas en la evidencia científica, ello permite ver mejoras en la misma sesión además para nosotros es importante 
+          la educación a los familiares y pacientes de forma que entiendan la terapia y puedan mantener los efectos de la misma durante un largo período de tiempo.
+        </p>
+      </div>
+
+      <div id="online" class="tabcontent">
+        <h2>Consultas online</h2>
+        <p>
+          Este servicio está pensado para personas que residen fuera de Burgos o no tienen acceso a las terapias. Pretende ser un apoyo y guía para familiares 
+          en esta situación. Las nuevas tecnologías nos permiten conectar y realizar una valoración de cada caso, con ello podemos proponer pautas y recursos 
+          que puedan ayudaros.
+        </p>
+        <p class="name">
+          Estamos deseando conoceros, no dudéis en solicitar información y exponer vuestras inquietudes.
+        </p>
       </div>
     </section>
 
@@ -96,68 +277,97 @@
             </div>
           </div>
           <div class="contact-card">
-            <img src="./img/email.svg" alt="email-icon">
-            <div>
-              <p>Email</p>
-              <p>miemail@email.com</p>
-            </div>
+            <a href="mailto:info@paulablancofisioterapia.com?subject=Contacto a través de la página">
+              <img src="./img/email.svg" alt="email-icon">
+              <div>
+                <p>Email</p>
+                <p id="min-text">info@paulablancofisioterapia.com</p>
+              </div>
+            </a>
           </div>
           <div class="contact-card">
-            <img src="./img/phone.svg" alt="phone-icon">
-            <div>
-              <p>Teléfono</p>
-              <p>600000000</p>
-            </div>
+            <a href="tel:+34644210573">
+              <img src="./img/phone.svg" alt="phone-icon">
+              <div>
+                <p>Teléfono</p>
+                <p>644 21 05 73</p>
+              </div>
+            </a>
           </div>
           <div class="contact-card">
-            <img src="./img/instagram.svg" alt="instagram-icon">
-            <div>
-              <p>Instagram</p>
-              <p>Paula Blanco</p>
-            </div>
+            <a href="https://www.instagram.com/pblancofisio/" target="_blank">
+              <img src="./img/instagram.svg" alt="instagram-icon">
+              <div>
+                <p>Instagram</p>
+                <p>Paula Blanco</p>
+              </div>
+            </a>
           </div>
           <div class="contact-card">
-            <img src="./img/location.svg" alt="location-icon">
-            <div>
-              <p>Centro eQilibrio</p>
-              <p style="font-size: 18px;">C/ Guardia Civil nº5 Bajo 09004 Burgos</p>
-              <p>947264020</p>
-            </div>
+            <a href="https://goo.gl/maps/JqwTzVWeLkfJXJMc6" target="_blank">
+              <img src="./img/location.svg" alt="location-icon">
+              <div>
+                <p>Centro eQilibrio</p>
+                <p style="font-size: 18px;">C/ Guardia Civil nº5 Bajo 09004 Burgos</p>
+                <p>947 26 40 20</p>
+              </div>
+            </a>
           </div>
         </div>
 
-        <form action="" id="contact-form">
+        <form enctype="text/plain" method="POST" action="mailto:info@paulablancofisioterapia.com?subject=Contacto a través de la página" id="contact-form">
           <div>
-            <input type="text" name="name" placeholder="Nombre">
-            <input type="text" name="mail" placeholder="Mail">
-            <input type="text" name="phone" placeholder="Teléfono">
+            <input type="text" name="Nombre" placeholder="Nombre">
+            <input type="text" name="%0ACorreo" placeholder="Mail">
+            <input type="text" name="%0ATelefono" placeholder="Teléfono">
           </div>
-          <textarea name="mensaje" placeholder="Tu mensaje" rows="4"></textarea>
+          <textarea name="%0AMensaje" placeholder="Tu mensaje" rows="4"></textarea>
           <input type="submit" value="Enviar">
         </form>
       </div>
     </section>
   </main>
 
+  <footer>
+    <a href="https://www.cpfcyl.com/" target="_blank"><div class="footer-image"><img src="./img/fisioterapia_cyl.svg" alt="logo-fisioterapeutas-cyl"></div></a>
+    <a href="https://www.separ.es/" target="_blank"><div class="footer-image"><img src="./img/separ.png" alt="logo-separ"></div></a>
+    <a href="https://centroeqilibrio.com/" target="_blank"><div class="footer-image"><img src="./img/eqilibrio.png" alt="logo-centro-eqilibrio"></div></a>
+    <ul class="policy">
+      <li><a href="privacy.html">Política de Privacidad</a></li>
+      <li><a href="legal-advice.html">Aviso legal</a></li>
+      <li><a href="cookies.html">Política de Cookies</a></li>
+    </ul>
+  </footer>
+  <div id="snackbar" class="toast">
+    <div class="cookies-content" id="cookies-content">
+      <h1>Política de Cookies</h1>
+      <p>
+        Paula Blanco en cumplimiento de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico (LSSI). Texto consolidado a fecha 10 de mayo de 2014 (Artículos 2 en relación con la definición del Anexo a), 22.2, 37, 38.4 g), 38.3 i)) informa acerca de la Política de cookies de su sitio web a través de los siguientes párrafos. Para más información acerca de esta política u otras de la web: www.paulablancofisioterapia.com Asimismo, le informa de que al navegar en el Sitio Web usted está prestando su consentimiento para poder utilizarlas.
+      </p>
+      <h2>¿QUÉ SON LAS COOKIES?</h2>
+      <p>
+        Una cookie es un archivo que se descarga y almacena en el equipo del usuario al acceder a determinadas páginas web, para almacenar y recuperar información sobre la navegación que se realiza desde ese equipo. Las cookies son esenciales para el funcionamiento de Internet, aportando ventajas para la prestación de servicios interactivos, facilitándole la navegación y usabilidad de nuestra web. Tenga en cuenta que las cookies no pueden dañar su equipo y que a cambio el que estén activadas nos ayudan a identificar y resolver los errores.
+      </p>
+      <h2>BLOQUEO O DESHABILITADO DE COOKIES</h2>
+      <p>
+        El usuario puede permitir, bloquear o eliminar el registro de los datos facilitados por las cookies instaladas en tu equipo mediante la configuración de las opciones del navegador instalado en su ordenador el plug-in de navegador disponible <a href="https://tools.google.com/dlpage/gaoptout?hl=es">a través de este enlace</a>.
+      </p>
+      <p>
+        Proporcionamos además los siguientes enlaces en relación con el bloqueo o deshabilitado de las cookies en los diferentes navegadores:
+        <br><a target="_blank" href="https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-">Información sobre Firefox</a>
+        <br><a target="_blank" href="http://windows.microsoft.com/es-es/windows7/how-to-manage-cookies-in-internet-explorer-9">Información sobre Explorer</a>
+        <br><a target="_blank" href="http://support.apple.com/kb/ph5042">Información sobre Safari</a>
+        <br><a target="_blank" href="http://help.opera.com/Windows/11.50/es-ES/cookies.html">Información sobre Opera</a>
+        <br><a target="_blank" href="http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647">Información sobre Google</a>
+      </p>
+    </div>
+    <p>
+      Utilizamos cookies propias y de terceros para mejorar nuestros servicios y realizar el análisis de sus hábitos de navegación. Si continúa navegando, 
+      consideramos que acepta su uso. Puede cambiar la configuración de su navegador u obtener más información sobre las cookies a través nuestra 
+      <a onclick="openCookies(event)">Política de Cookies</a>.
+    </p>
+    <button onclick="acceptCookies()">Acepto</button>
+  </div>
 </body>
+
 </html>
-
-<script>
-  function _displayMenu() {
-    var mobileMenu = document.getElementById('nav-list');
-
-    if (mobileMenu.classList.contains('hidden')) {
-      mobileMenu.classList.remove('hidden');
-      setTimeout(() => mobileMenu.classList.remove('visually-hidden'), 20);
-    } else {
-      mobileMenu.classList.add('visually-hidden');
-      mobileMenu.addEventListener('transitionend', function(e) {
-        mobileMenu.classList.add('hidden');
-      }, {
-        capture: false,
-        once: true,
-        passive: false
-      });
-    }
-  }
-  </script>

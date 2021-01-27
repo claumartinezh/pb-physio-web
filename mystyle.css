@@ -7,6 +7,7 @@ body {
   margin: 0;
 }
 
+/* Menu navegacion */
 header {
   position: fixed;
   background-color: #00C8C8;
@@ -19,8 +20,16 @@ header {
   min-height: 80px;
 }
 
+header nav {
+  font-family: 'Poppins', serif;
+}
+
+nav h1 {
+  display: none;
+}
+
 .logo {
-  width: 80px;
+  width: 90px;
 }
 
 nav {
@@ -39,7 +48,7 @@ nav {
 
 .nav-list {
   position: absolute;
-  top: 103px;
+  top: 120px;
   left: 0;
   margin-top: 0;
   background: #008080;
@@ -90,6 +99,7 @@ nav li a:hover {
   font-weight: bold;
 }
 
+/* Contenido pagina */
 main {
   margin-top: 120px;
 }
@@ -97,10 +107,9 @@ main {
 .summary {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background: white;
   margin: 0 auto;
-  padding-top: 20px;
+  padding: 20px 30px 0px 50px;
 }
 
 section {
@@ -111,25 +120,79 @@ section {
   padding: 20px;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  line-height: 30px;
+}
+
+.title-info {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.title-info h1 {
+  text-transform: none;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+  line-height: 38px;
+}
+
+.title-info h2 {
+  color: #C70499;
+  font-size: 1.5em;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 38px;
+}
+
+.title-info p {
+  font-size: 20px;
+}
+
+p a {
+  color: #C70499;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+p a:hover {
+  opacity: 0.5;
 }
 
 section h1 {
   color: #C70499;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .info-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
+}
+
+.name {
+  font-weight: bold;
+  color: #C70499;
+}
+
+p .study {
+  color: #008080;
 }
 
 .photo {
   border: 2px solid #780C5F;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+}
+
+.media-section {
+  text-align: center;
+}
+
+.social-networks {
+  margin-top: 10px;
 }
 
 .contact-info {
@@ -152,11 +215,18 @@ section h1 {
   align-items: center;
   margin-bottom: 20px;
   text-align: left;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  opacity: 0.7;
 }
 
 .contact-card img {
-  margin-right: 20px;
+  margin-right: 12px;
   width: 50px;
+  height: 50px;
 }
 
 .contact-card p {
@@ -168,6 +238,26 @@ section h1 {
   margin: 0;
 }
 
+#min-text {
+  font-size: 13px;
+}
+
+.contact-card p:nth-of-type(2), .contact-card p:nth-of-type(3) {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contact-card a {
+  display: flex;
+  color: #008080;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Formulario */
 form {
   font-family: 'Cabin', serif;
   display: flex;
@@ -208,13 +298,197 @@ section:nth-of-type(2), section:nth-of-type(4) {
   background-color: #CAF7F3;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 60px 0;
+  background: #008080;
+  gap: 10px;
+}
+
+footer a {
+  opacity: 1;
+  transition: 0.3s ease;
+  color: #00C8C8;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
+.footer-image {
+  margin: 10px;
+  background: #ffffff;
+  width: 230px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-image img {
+  width: inherit;
+}
+
+.policy {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  line-height: 35px;
+}
+
+/* Tabs */
+.tabs {
+  overflow: hidden;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: 'Cabin';
+  margin: 5px;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
+.tabs button:hover {
+  background-color: #00E0E0;
+}
+
+.tabs .tablinks {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #000;
+  background: #00C8C8;
+  margin: 0 5px 0 0;
+}
+
+.tabs .tablinks span {
+  display: none;
+}
+
+.tabs button.active {
+  background-color: #FFF;
+  color: #000;
+}
+
+.tabcontent {
+  font-family: 'Cabin';
+  display: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border-top-left-radius: unset;
+  background: #fff;
+  padding: 2% 4%;
+  text-align: left;
+  font-size: 18px;
+  box-shadow: 12px 12px 12px -20px #006D6D;
+}
+
+.tabcontent h2 {
+  color: #008080;
+}
+
+.tabcontent h3 {
+  margin-top: 30px;
+}
+
+.tabcontent p.name {
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 35px;
+  border: 2px solid #C70499;
+  border-radius: 5px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.tabcontent p.name:hover {
+  background-color: #FFEEFB;
+}
+
+.tabcontent ul {
+  color: #008080;
+}
+
+.toast {
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  z-index: 100000;
+  font-size: 14px;
+  line-height: 20px;
+  left: 0;
+  text-align: center;
+  bottom: 0;
+  color: #fff;
+  background: #000;
+  opacity: 0.85;
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.toast button {
+  background-color: #780c5f;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cookies-content {
+  height: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.cookies-content-active {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  height: auto;
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
 @media (min-width: 750px) {
   .menu-button {
     display: none;
   }
-  
+
   nav {
     display: flex;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  header nav h1 {
+    display: inline;
+    font-size: 22px;
+    margin-left: 20px;
+    font-weight: normal;
+    min-width: 290px;
   }
 
   .nav-list {
@@ -222,7 +496,7 @@ section:nth-of-type(2), section:nth-of-type(4) {
     display: block;
     background: none;
     position: relative;
-    padding: 40px;
+    padding: 30px;
     top: 0;
     width: auto;
     height: 20px;
@@ -238,7 +512,7 @@ section:nth-of-type(2), section:nth-of-type(4) {
   nav ul {
     font-size: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
   }
@@ -246,27 +520,50 @@ section:nth-of-type(2), section:nth-of-type(4) {
     margin: 0;
     display: flex;
     justify-content: center;
+    min-width: 130px;
+  }
+
+  main {
+    margin-top: 160px;
   }
 
   .summary {
     flex-direction: row;
     justify-content: center;
+    padding: 30px;
+  }
+
+  .summary .contact-card {
+    margin: 0;
   }
 
   .section-index {
     height: 15px;
   }
+
   section {
-    padding: 20px 160px;
-    margin-top: 50px;
+    padding: 20px 160px 50px;
     font-size: 20px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
   }
 
+  section.legal {
+    text-align: left;
+  }
+
   section h1 {
     font-size: 2em;
+    margin-top: 60px;
+  }
+
+  section:nth-last-of-type(1) {
+    padding-bottom: 100px;
+  }
+
+  .title-info {
+    padding: 0 130px;
   }
 
   .info-section {
@@ -275,13 +572,26 @@ section:nth-of-type(2), section:nth-of-type(4) {
   }
 
   .info-section p {
-    width: 600px;
+    width: 800px;
     padding: 0 60px;
   }
 
   .photo {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .social-networks {
+    margin-top: 20px;
+  }
+
+  .social-networks a {
+    opacity: 1;
+    transition: 0.3s ease;
+  }
+
+  .social-networks a:hover {
+    opacity: 0.5;
   }
 
   .contact-section {
@@ -291,6 +601,30 @@ section:nth-of-type(2), section:nth-of-type(4) {
   .contact-card {
     width: 300px;
     margin-left: 20px;
+  }
+
+  #min-text {
+    font-size: 16px;
+  }
+
+  .tabs .tablinks span {
+    display: block;
+  }
+
+  .tabcontent ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .tabcontent ul > li {
+    display: inline;
+    line-height: 35px;
+  }
+
+  .tabcontent ul li:not(:last-child)::after {
+    margin: 20px;
+    content: "·";
   }
 
   form {
@@ -310,5 +644,15 @@ section:nth-of-type(2), section:nth-of-type(4) {
 
   textarea {
     width: 90%;
+    max-width: 542px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer-image {
+    width: 250px;
   }
 }
