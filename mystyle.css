@@ -54,7 +54,6 @@ body {
 }
 
 .coming-soon .contact-card img {
-  width: 30px;
   margin: 20px 0 10px 0;
   opacity: 1;
   transition: 0.3s ease;
@@ -216,7 +215,7 @@ section h1 {
 
 .contact-card img {
   margin-right: 20px;
-  width: 50px;
+  width: 40px;
 }
 
 .contact-card p {
