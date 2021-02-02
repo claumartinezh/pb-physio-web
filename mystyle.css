@@ -183,8 +183,14 @@ p .study {
 .photo {
   border: 2px solid #780C5F;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.photo:hover {
+  opacity: 0.9;
 }
 
 .media-section {
@@ -566,10 +572,7 @@ footer a:hover {
     padding: 0 130px;
   }
 
-  .info-section {
-    flex-direction: row;
-    text-align: left;
-  }
+
 
   .info-section p {
     width: 800px;
@@ -577,8 +580,8 @@ footer a:hover {
   }
 
   .photo {
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: 380px;
   }
 
   .social-networks {
@@ -607,10 +610,6 @@ footer a:hover {
     font-size: 16px;
   }
 
-  .tabs .tablinks span {
-    display: block;
-  }
-
   .tabcontent ul {
     list-style: none;
     padding: 0;
@@ -618,7 +617,7 @@ footer a:hover {
   }
 
   .tabcontent ul > li {
-    display: inline;
+    display: inline-block;;
     line-height: 35px;
   }
 
@@ -654,5 +653,20 @@ footer a:hover {
 
   .footer-image {
     width: 250px;
+  }
+}
+
+
+@media (min-width: 1370px) {
+  .info-section {
+    flex-direction: row;
+    text-align: left;
+  }
+  .photo {
+    width: 400px;
+    height: 400px;
+  }
+  .tabs .tablinks span {
+    display: block;
   }
 }
