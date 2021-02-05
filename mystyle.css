@@ -436,6 +436,7 @@ footer a:hover {
 .tabcontent img {
   width: 400px;
   border-radius: 20px;
+  margin-top: 0.83em;
 }
 
 .toast {
@@ -635,6 +636,7 @@ footer a:hover {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    margin-top: 30px;
   }
 
   form {
