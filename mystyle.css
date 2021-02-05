@@ -407,10 +407,12 @@ footer a:hover {
 
 .tabcontent h2 {
   color: #008080;
+  font-size: 2em;
 }
 
 .tabcontent h3 {
   margin-top: 30px;
+  font-size: 1.5em;
 }
 
 .tabcontent p.name {
