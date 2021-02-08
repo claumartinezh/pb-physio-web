@@ -440,6 +440,12 @@ footer a:hover {
   color: #008080;
 }
 
+.tabcontent .with-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .tabcontent img {
   width: 300px;
   border-radius: 20px;
@@ -641,9 +647,9 @@ footer a:hover {
   }
 
   .tabcontent .with-img {
-    display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 20px;
+    gap: 40px;
     margin-top: 30px;
   }
 
