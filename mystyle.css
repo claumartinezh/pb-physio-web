@@ -408,6 +408,7 @@ footer a:hover {
 .tabcontent h2 {
   color: #008080;
   font-size: 2em;
+  line-height: normal;
 }
 
 .tabcontent h3 {
