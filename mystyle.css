@@ -413,6 +413,7 @@ footer a:hover {
   color: #008080;
   font-size: 2em;
   line-height: normal;
+  margin-top: 30px;
 }
 
 .tabcontent h3 {
@@ -447,6 +448,7 @@ footer a:hover {
 }
 
 .tabcontent img {
+  object-fit: cover; 
   width: 300px;
   border-radius: 20px;
   margin-top: 0.83em;
@@ -646,6 +648,10 @@ footer a:hover {
     content: "·";
   }
 
+  .tabcontent .with-img h2 {
+    margin-top: 0;
+  }
+
   .tabcontent .with-img {
     flex-direction: row;
     align-items: flex-start;
@@ -655,10 +661,6 @@ footer a:hover {
 
   .centered {
     align-items: center !important;
-  }
-
-  .tabcontent img {
-    width: 500px;
   }
 
   form {
@@ -697,11 +699,18 @@ footer a:hover {
     flex-direction: row;
     text-align: left;
   }
+
   .photo {
     width: 400px;
     height: 400px;
   }
+
   .tabs .tablinks span {
     display: block;
+  }
+  
+  .tabcontent img {
+    width: 450px;
+    height: 300px;
   }
 }
