@@ -440,6 +440,12 @@ footer a:hover {
   color: #008080;
 }
 
+.tabcontent .with-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .tabcontent img {
   width: 300px;
   border-radius: 20px;
