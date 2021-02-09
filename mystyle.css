@@ -138,21 +138,22 @@ section {
   color: #FFF;
 }
 
-.title-info h1 {
+.title-info h2 {
   text-transform: none;
-  font-size: 2em;
+  font-size: 36px;
   margin: 0;
   text-align: center;
   line-height: 38px;
   color: #FF33CC;
 }
 
-.title-info h2 {
+.subtitle {
   color: #FF33CC;
-  font-size: 1.5em;
+  font-size: 27px;
   margin: 10px 0;
   text-align: center;
   line-height: 38px;
+  display: block;
 }
 
 .title-info p {
@@ -174,7 +175,7 @@ p a:hover {
   opacity: 0.5;
 }
 
-section h1 {
+section h3 {
   color: #CC0099;
   text-transform: uppercase;
   margin-top: 30px;
@@ -424,15 +425,16 @@ footer a:hover {
   box-shadow: 12px 12px 12px -20px #006666;
 }
 
-.tabcontent h2 {
+.tabcontent h4 {
   color: #009999;
+  text-transform: none;
   font-size: 2em;
   line-height: normal;
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
-.tabcontent h3 {
-  margin-top: 30px;
+.tabcontent h5 {
+  margin: 40px 0 30px 0;
   font-size: 1.5em;
 }
 
@@ -576,6 +578,14 @@ footer a:hover {
     margin-top: 160px;
   }
 
+  .title-info h2 {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 30px;
+  }
+
   .summary {
     flex-direction: row;
     justify-content: center;
@@ -598,17 +608,27 @@ footer a:hover {
     text-align: center;
   }
 
-  section.legal {
-    text-align: left;
-  }
-
-  section h1 {
+  section h3 {
     font-size: 2em;
     margin-top: 60px;
   }
 
   section:nth-last-of-type(1) {
     padding-bottom: 100px;
+  }
+
+  section.legal {
+    text-align: left;
+  }
+
+  section.legal h2 {
+    font-size: 36px;
+    margin-top: 60px;
+    color: #CC0099;
+  }
+
+  section.legal h3 {
+    font-size: 30px;
   }
 
   .title-info {
