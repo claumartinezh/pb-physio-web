@@ -679,8 +679,8 @@ footer a:hover {
     margin-top: 30px;
   }
 
-  .centered {
-    align-items: center !important;
+  .align-end {
+    align-items: flex-end !important;
   }
 
   form {
