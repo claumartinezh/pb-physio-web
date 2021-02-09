@@ -185,6 +185,10 @@ section h1 {
   align-items: center;
 }
 
+.info-section p {
+  text-align: justify;
+}
+
 .name {
   font-weight: bold;
   color: #CC0099;
@@ -429,6 +433,10 @@ footer a:hover {
 .tabcontent h3 {
   margin-top: 30px;
   font-size: 1.5em;
+}
+
+.tabcontent p {
+  text-align: justify;
 }
 
 .tabcontent p.name {
