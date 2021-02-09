@@ -283,43 +283,6 @@ a {
   cursor: pointer;
 }
 
-/* Formulario */
-form {
-  font-family: 'Cabin', serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-form div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input[type=text], input[type=submit], textarea {
-  font-family: 'Cabin', serif;
-  padding: 15px 10px;
-  font-size: 18px;
-  border: 2px solid #008080;
-  margin: 10px;
-  border-radius: 5px;
-  width: 250px;
-}
-
-input[type=submit] {
-  margin: 18px 0;
-  background-color: #990066;
-  color: #FFFFFF;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #CC0099;
-  transition: background-color 0.3s ease;
-}
-
 section:nth-of-type(2), section:nth-of-type(4) {
   background-color: #CAF7F3;
 }
@@ -663,10 +626,6 @@ section.legal h3 {
     opacity: 0.5;
   }
 
-  .contact-section {
-    display: flex;
-  }
-
   .contact-card {
     width: 300px;
     margin-left: 20px;
@@ -707,26 +666,6 @@ section.legal h3 {
     align-items: flex-end !important;
   }
 
-  form {
-    margin-left: 10%;
-    width: 600px;
-    align-items: center;
-  }
-
-  form div {
-    width: 600px;
-  }
-
-  input[type="text"] {
-    width: 90%;
-    margin: 15px;
-  }
-
-  textarea {
-    width: 90%;
-    max-width: 542px;
-  }
-
   footer {
     flex-direction: row;
     justify-content: space-evenly;
@@ -736,7 +675,6 @@ section.legal h3 {
     width: 250px;
   }
 }
-
 
 @media (min-width: 1370px) {
   .info-section {
@@ -752,7 +690,7 @@ section.legal h3 {
   .tabs .tablinks span {
     display: block;
   }
-  
+
   .tabcontent img {
     width: 450px;
     height: 300px;
