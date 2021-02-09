@@ -31,6 +31,7 @@ nav h1 {
 
 .logo {
   width: 90px;
+  transition: 0.3s;
 }
 
 nav {
@@ -53,7 +54,7 @@ nav {
   left: 0;
   margin-top: 0;
   background: #008080;
-  height: 90vh;
+  height: 100vh;
   opacity: 0.9;
   text-align: center;
 

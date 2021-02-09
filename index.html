@@ -79,11 +79,12 @@
     </script>
 </head>
 <body>
-  <header>
+  <script>window.onscroll = function() {scrollFunction()};</script>
+  <header id="header">
     <nav>
-      <a class="nav-a" href="#"><img src="./img/logo400.png" class="logo" alt="banner-logo"></a>
+      <a class="nav-a" href="#"><img id="headerLogo" src="./img/logo400.png" class="logo" alt="banner-logo"></a>
       <h1>Paula Blanco<br> fisioterapia neurológica y respiratoria</h1>
-      <div class="nav-list box hidden" id="nav-list">
+      <div class="nav-list box hidden" id="navList">
         <ul>
           <li><a href="#about" onclick="_displayMenu()">Sobre mí</a></li>
           <li><a href="#services" onclick="_displayMenu()">Servicios</a></li>
