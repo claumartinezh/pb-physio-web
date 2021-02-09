@@ -518,6 +518,20 @@ footer a:hover {
   transform-origin: bottom;
 }
 
+section.legal {
+  text-align: justify;
+}
+
+section.legal h2 {
+  font-size: 36px;
+  margin-top: 60px;
+  color: #CC0099;
+}
+
+section.legal h3 {
+  text-align: center;
+}
+
 @media (min-width: 750px) {
   .menu-button {
     display: none;
@@ -617,18 +631,8 @@ footer a:hover {
     padding-bottom: 100px;
   }
 
-  section.legal {
-    text-align: left;
-  }
-
   section.legal h2 {
-    font-size: 36px;
-    margin-top: 60px;
-    color: #CC0099;
-  }
-
-  section.legal h3 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .title-info {
