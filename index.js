@@ -1,5 +1,5 @@
 function _displayMenu() {
-  var mobileMenu = document.getElementById('nav-list');
+  var mobileMenu = document.getElementById('navList');
 
   if (mobileMenu.classList.contains('hidden')) {
     mobileMenu.classList.remove('hidden');
@@ -38,4 +38,30 @@ function acceptCookies() {
 function openCookies(ev) {
   var cookiesContent = document.getElementById('cookies-content');
   cookiesContent.className = cookiesContent.className.includes('active') ? 'cookies-content' : 'cookies-content-active';
+}
+
+function scrollFunction() {
+  if (window.screen.width < 750) {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("headerLogo").style.width = "50px";
+      document.getElementById("navList").style.top = "80px";
+    } else {
+      document.getElementById("headerLogo").style.width = "90px";
+      document.getElementById("navList").style.top = "120px";
+    }
+  } else {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("headerLogo").style.width = "100px";
+      document.getElementById("navList").style.top = "-5px";
+      document.getElementById("title").style.fontSize = "28px";
+      document.getElementById("title").style.lineHeight = "30px";
+      document.getElementById("subtitle").style.fontSize = "20px";
+    } else {
+      document.getElementById("headerLogo").style.width = "130px";
+      document.getElementById("navList").style.top = "0";
+      document.getElementById("title").style.fontSize = "32px";
+      document.getElementById("title").style.lineHeight = "50px";
+      document.getElementById("subtitle").style.fontSize = "22px";
+    }
+  }
 }

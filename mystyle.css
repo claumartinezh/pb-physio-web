@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Cabin', serif;
   background-color: #DCFAF7;
@@ -10,7 +11,7 @@ body {
 /* Menu navegacion */
 header {
   position: fixed;
-  background-color: #00C8C8;
+  background-color: #00CCCC;
   top: 0;
   left: 0;
   width: 100%;
@@ -30,6 +31,7 @@ nav h1 {
 
 .logo {
   width: 90px;
+  transition: 0.3s;
 }
 
 nav {
@@ -52,7 +54,7 @@ nav {
   left: 0;
   margin-top: 0;
   background: #008080;
-  height: 90vh;
+  height: 100vh;
   opacity: 0.9;
   text-align: center;
 
@@ -82,19 +84,23 @@ nav ul {
   font-size: 20px;
   padding: 20px 0;
 }
+
 nav li {
   margin: 30px 0;
 }
+
 nav li a {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
 }
+
 nav li a:visited {
   color: inherit;
 }
+
 nav li a:hover {
-  color: #C70499;
+  color: #CC0099;
   transition: color 0.3s ease;
   font-weight: bold;
 }
@@ -109,7 +115,7 @@ main {
   flex-direction: column;
   background: white;
   margin: 0 auto;
-  padding: 20px 30px 0px 50px;
+  padding: 20px 30px 0px 25px;
 }
 
 section {
@@ -124,32 +130,42 @@ section {
 }
 
 .title-info {
-  margin-top: 50px;
-  padding: 0 20px;
-}
-
-.title-info h1 {
-  text-transform: none;
-  font-size: 2em;
-  margin: 0;
-  text-align: center;
-  line-height: 38px;
+  padding: 40px 20px;
+  background-size: cover;
+  height: auto;
+  background-image: url('./img/banner1.png');
+  text-shadow: 1px 1px black;
+  color: #FFF;
 }
 
 .title-info h2 {
-  color: #C70499;
-  font-size: 1.5em;
+  text-transform: none;
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+  line-height: 38px;
+  color: #FF33CC;
+}
+
+.subtitle {
+  color: #FF33CC;
+  font-size: 27px;
   margin: 10px 0;
   text-align: center;
   line-height: 38px;
+  display: block;
 }
 
 .title-info p {
   font-size: 20px;
 }
 
+.title-info p a {
+  color: #FF33CC;
+}
+
 p a {
-  color: #C70499;
+  color: #CC0099;
   text-decoration: none;
   opacity: 1;
   transition: 0.3s ease;
@@ -159,10 +175,11 @@ p a:hover {
   opacity: 0.5;
 }
 
-section h1 {
-  color: #C70499;
+section h3 {
+  color: #CC0099;
   text-transform: uppercase;
   margin-top: 30px;
+  font-size: 30px;
 }
 
 .info-section {
@@ -171,20 +188,30 @@ section h1 {
   align-items: center;
 }
 
+.info-section p {
+  text-align: justify;
+}
+
 .name {
   font-weight: bold;
-  color: #C70499;
+  color: #CC0099;
 }
 
 p .study {
-  color: #008080;
+  color: #009999;
 }
 
 .photo {
-  border: 2px solid #780C5F;
+  border: 2px solid #990066;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.photo:hover {
+  opacity: 0.9;
 }
 
 .media-section {
@@ -198,17 +225,22 @@ p .study {
 .contact-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 20px 10px;
-  border: 2px solid #008080;
-  border-radius: 5px;
-  padding: 15px 15px 0 15px;
+  border: 2px solid #009999;
+  border-radius: 20px;
+  padding: 15px;
   background-color: #DCFAF7;
+  height: 420px;
+}
+
+.contact-info .contact-card {
+  margin: 0;
 }
 
 .contact-card {
-  color: #008080;
+  color: #009999;
   font-size: 20px;
   width: 250px;
   display: flex;
@@ -238,60 +270,42 @@ p .study {
   margin: 0;
 }
 
-#min-text {
-  font-size: 13px;
-}
-
 .contact-card p:nth-of-type(2), .contact-card p:nth-of-type(3) {
   font-size: 18px;
   line-height: 25px;
 }
 
+.contact-card p.min-text {
+  font-size: 13px;
+}
+
 .contact-card a {
   display: flex;
-  color: #008080;
+  color: #009999;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-photo-horizontal {
+  width: 280px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.contact-photo-vertical {
+  display: none;
+  border-radius: 20px;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-}
-
-/* Formulario */
-form {
-  font-family: 'Cabin', serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-form div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input[type=text], input[type=submit], textarea {
-  font-family: 'Cabin', serif;
-  padding: 15px 10px;
-  font-size: 18px;
-  border: 2px solid #008080;
-  margin: 10px;
-  border-radius: 5px;
-  width: 250px;
-}
-
-input[type=submit] {
-  margin: 18px 0;
-  background-color: #780c5f;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #C70499;
-  transition: background-color 0.3s ease;
 }
 
 section:nth-of-type(2), section:nth-of-type(4) {
@@ -310,7 +324,7 @@ footer {
 footer a {
   opacity: 1;
   transition: 0.3s ease;
-  color: #00C8C8;
+  color: #00CCCC;
 }
 
 footer a:hover {
@@ -372,8 +386,8 @@ footer a:hover {
   display: flex;
   gap: 8px;
   align-items: center;
-  color: #000;
-  background: #00C8C8;
+  color: #000000;
+  background: #00CCCC;
   margin: 0 5px 0 0;
 }
 
@@ -382,8 +396,8 @@ footer a:hover {
 }
 
 .tabs button.active {
-  background-color: #FFF;
-  color: #000;
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 .tabcontent {
@@ -396,15 +410,24 @@ footer a:hover {
   padding: 2% 4%;
   text-align: left;
   font-size: 18px;
-  box-shadow: 12px 12px 12px -20px #006D6D;
+  box-shadow: 12px 12px 12px -20px #006666;
 }
 
-.tabcontent h2 {
-  color: #008080;
+.tabcontent h4 {
+  color: #009999;
+  text-transform: none;
+  font-size: 2em;
+  line-height: normal;
+  margin: 30px 0;
 }
 
-.tabcontent h3 {
-  margin-top: 30px;
+.tabcontent h5 {
+  margin: 40px 0 30px 0;
+  font-size: 1.5em;
+}
+
+.tabcontent p {
+  text-align: justify;
 }
 
 .tabcontent p.name {
@@ -413,7 +436,7 @@ footer a:hover {
   font-weight: normal;
   text-align: center;
   line-height: 35px;
-  border: 2px solid #C70499;
+  border: 2px solid #CC0099;
   border-radius: 5px;
   padding: 20px;
   transition: background-color 0.3s ease;
@@ -424,7 +447,20 @@ footer a:hover {
 }
 
 .tabcontent ul {
-  color: #008080;
+  color: #009999;
+}
+
+.tabcontent .with-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabcontent img {
+  object-fit: cover; 
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 0.83em;
 }
 
 .toast {
@@ -437,8 +473,8 @@ footer a:hover {
   left: 0;
   text-align: center;
   bottom: 0;
-  color: #fff;
-  background: #000;
+  color: #FFFFFF;
+  background: #000000;
   opacity: 0.85;
   display: block;
 }
@@ -448,8 +484,8 @@ footer a:hover {
 }
 
 .toast button {
-  background-color: #780c5f;
-  color: #fff;
+  background-color: #990066;
+  color: #FFFFFF;
   border: none;
   padding: 10px;
   border-radius: 5px;
@@ -468,6 +504,20 @@ footer a:hover {
   height: auto;
   transform: scaleY(1);
   transform-origin: bottom;
+}
+
+section.legal {
+  text-align: justify;
+}
+
+section.legal h2 {
+  font-size: 36px;
+  margin-top: 60px;
+  color: #CC0099;
+}
+
+section.legal h3 {
+  text-align: center;
 }
 
 @media (min-width: 750px) {
@@ -491,6 +541,17 @@ footer a:hover {
     min-width: 290px;
   }
 
+  header nav h1 .title {
+    font-size: 32px;
+    font-family: 'Cabin';
+    line-height: 50px;
+    transition: 0.3s;
+  }
+
+  header nav h1 .second-title {
+    transition: 0.3s;
+  }
+
   .nav-list {
     flex-grow: 5;
     display: block;
@@ -502,9 +563,11 @@ footer a:hover {
     height: 20px;
     transition: none;
   }
+
   .hidden {
     display: block;
   }
+
   .visually-hidden {
     opacity: 1;
   }
@@ -516,6 +579,7 @@ footer a:hover {
     margin: 0;
     padding: 0;
   }
+
   nav li {
     margin: 0;
     display: flex;
@@ -525,6 +589,14 @@ footer a:hover {
 
   main {
     margin-top: 160px;
+  }
+
+  .title-info h2 {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 30px;
   }
 
   .summary {
@@ -549,11 +621,7 @@ footer a:hover {
     text-align: center;
   }
 
-  section.legal {
-    text-align: left;
-  }
-
-  section h1 {
+  section h3 {
     font-size: 2em;
     margin-top: 60px;
   }
@@ -562,13 +630,13 @@ footer a:hover {
     padding-bottom: 100px;
   }
 
-  .title-info {
-    padding: 0 130px;
+  section.legal h2 {
+    font-size: 40px;
   }
 
-  .info-section {
-    flex-direction: row;
-    text-align: left;
+  .title-info {
+    padding: 50px 130px;
+    height: 400px;
   }
 
   .info-section p {
@@ -577,8 +645,8 @@ footer a:hover {
   }
 
   .photo {
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: 380px;
   }
 
   .social-networks {
@@ -594,21 +662,13 @@ footer a:hover {
     opacity: 0.5;
   }
 
-  .contact-section {
-    display: flex;
-  }
-
   .contact-card {
     width: 300px;
     margin-left: 20px;
   }
 
-  #min-text {
+  .contact-card p.min-text {
     font-size: 16px;
-  }
-
-  .tabs .tablinks span {
-    display: block;
   }
 
   .tabcontent ul {
@@ -618,7 +678,7 @@ footer a:hover {
   }
 
   .tabcontent ul > li {
-    display: inline;
+    display: inline-block;;
     line-height: 35px;
   }
 
@@ -627,24 +687,38 @@ footer a:hover {
     content: "·";
   }
 
-  form {
-    margin-left: 10%;
-    width: 600px;
-    align-items: center;
+  .tabcontent .with-img h2 {
+    margin-top: 0;
   }
 
-  form div {
-    width: 600px;
+  .tabcontent .with-img {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
   }
 
-  input[type="text"] {
-    width: 90%;
-    margin: 15px;
+  .align-end {
+    align-items: flex-end !important;
   }
 
-  textarea {
-    width: 90%;
-    max-width: 542px;
+  .contact-section {
+    flex-direction: row;
+    width: 70%;
+    gap: 5%;
+  }
+
+  .contact-title {
+    margin-right: 250px;
+  }
+
+  .contact-photo-horizontal {
+    display: none;
+  }
+
+  .contact-photo-vertical {
+    display: block;
+    height: 450px;
   }
 
   footer {
@@ -654,5 +728,26 @@ footer a:hover {
 
   .footer-image {
     width: 250px;
+  }
+}
+
+@media (min-width: 1370px) {
+  .info-section {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .photo {
+    width: 400px;
+    height: 400px;
+  }
+
+  .tabs .tablinks span {
+    display: block;
+  }
+
+  .tabcontent img {
+    width: 450px;
+    height: 300px;
   }
 }

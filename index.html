@@ -5,18 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="mystyle.css">
   <script type="text/javascript" src="index.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="shortcut icon" href="./img/logo400.png">
-  <title>Paula Blanco | Fisioterapia</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+  <link rel="shortcut icon" href="./img/logo-banner.png">
+  <link rel="icon" type="image/png" href="./img/logo-banner.png"/>
+  <link rel="apple-touch-icon" href="./img/logo-banner.png">
+  <meta name="msapplication-square310x310logo" content="./img/logo-banner.png">
+  <meta name="theme-color" content="#CAF7F3" />
+  <meta name="description" content="Cookies - Paula Blanco. Fisioterapia neurológica y respiratoria en Burgos.">
+  <title>Fisioterapia | Paula Blanco</title>
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "LocalBusiness",
+      "name" : "Paula Blanco Fisioterapia",
+      "image" : "https://www.paulablancofisioterapia.com/img/logo-2.png",
+      "telephone" : "+34644210573",
+      "email" : "info@paulablancofisioterapia.com",
+      "address" : {
+        "@type" : "PostalAddress",
+        "streetAddress" : "Calle Guardia Civil 5 Bajo",
+        "addressLocality" : "Burgos",
+        "addressRegion" : "Castilla y León",
+        "addressCountry" : "España",
+        "postalCode" : "09004"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.34512448952454,
+        "longitude": -3.6945088233379693
+      },
+      "founder" : {
+        "@type": "Person",
+        "name": "Paula Blanco"
+      },
+      "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+      },
+      "url" : "https://www.paulablancofisioterapia.com/",
+      "availableService": [
+        {
+          "@type": ["medicalSpecialty", "TherapeuticProcedure", "PhysicalTherapy", "Physiotherapy" ],
+          "name": "Fisioterapia",
+          "alternateName": "Fisio"
+        },
+        {
+          "@type": ["medicalSpecialty", "TherapeuticProcedure", "PhysicalTherapy", "Physiotherapy" ],
+          "name": "Fisioterapia Respiratoria",
+          "alternateName": "Respiratoria"
+        },
+        {
+          "@type": ["medicalSpecialty", "TherapeuticProcedure", "PhysicalTherapy", "Physiotherapy" ],
+          "name": "Fisioterapia Neurologica",
+          "alternateName": "Neuro"
+        },
+        {
+          "@type": ["medicalSpecialty", "TherapeuticProcedure", "PhysicalTherapy", "Physiotherapy" ],
+          "name": "Fisioterapia Infantil",
+          "alternateName": "Infantil"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-  <header>
+  <script>window.onscroll = function() {scrollFunction()};</script>
+  <header id="header">
     <nav>
-      <a class="nav-a" href="#"><img src="./img/logo400.png" class="logo" alt="banner-logo"></a>
-      <h1>Paula Blanco<br> fisioterapia neurológica y respiratoria</h1>
-      <div class="nav-list box hidden" id="nav-list">
+      <a class="nav-a" href="#"><img id="headerLogo" src="./img/logo400.png" class="logo" alt="banner-logo"></a>
+      <h1><span class="title" id="title">Paula Blanco</span><br><span class="second-title" id="subtitle">Fisioterapia neurológica y respiratoria</span></h1>
+      <div class="nav-list box hidden" id="navList">
         <ul>
           <li><a href="#about" onclick="_displayMenu()">Sobre mí</a></li>
           <li><a href="#services" onclick="_displayMenu()">Servicios</a></li>
@@ -30,7 +98,7 @@
   <main>
     <div class="summary">
       <div class="contact-card">
-        <img src="./img/schedule.svg" alt="schedule-icon">
+        <img src="./img/schedule.svg" alt="schedule-icon" width="50px" height="50px">
         <div>
           <p>Horario</p>
           <p>L-V de 9h a 21h</p>
@@ -38,7 +106,7 @@
       </div>
       <div class="contact-card">
         <a href="tel:+34644210573">
-          <img src="./img/phone.svg" alt="phone-icon">
+          <img src="./img/phone.svg" alt="phone-icon" width="50px" height="50px">
           <div>
             <p>Teléfono</p>
             <p>644 21 05 73</p>
@@ -47,7 +115,7 @@
       </div>
       <div class="contact-card">
         <a href="mailto:info@paulablancofisioterapia.com?subject=Contacto a través de la página">
-        <img src="./img/email.svg" alt="email-icon">
+        <img src="./img/email.svg" alt="email-icon" width="50px" height="50px">
           <div>
             <p>Email</p>
             <p>info@paulablancofisioterapia.com</p>
@@ -56,8 +124,7 @@
       </div>
     </div>
     <section class="title-info">
-      <h1>Fisioterapia neurológica y respiratoria,</h1>
-      <h2>a tu alcance en Burgos.</h2>
+      <h2>Fisioterapia neurológica y respiratoria, <span class="subtitle">a tu alcance en Burgos.</span></h2>
       <p>
         Para nosotros lo importante es adaptarnos a tu situación, por ello, ofrecemos tratamiento en el <a href="https://centroeqilibrio.com/" target="_blank"><b>centro Eqilibrio</b></a> y <a href="#"><b>servicio a domicilio</b></a> para realizar la terapia de la forma más efectiva posible.
       </p>
@@ -67,14 +134,14 @@
     </section>
     <a name="about">&nbsp;</a>
     <section>
-      <h1>Sobre mí</h1>
+      <h3>Sobre mí</h3>
       <div class="info-section">
         <div>
           <p>
-            Soy <span class="name">Paula Blanco</span>, estudié el <span class="study">Grado en Fisioterapia</span>, en la Universidad de Valladolid, 
+            Soy <span class="name">Paula Blanco</span>, estudié el <span class="study">Grado en Fisioterapia</span> en la Universidad de Valladolid, 
             realizando la <span class="study">mención en pediatría</span>, por mi interés en mejorar atención fisioterápica de los más pequeños. Tras terminar el Grado, 
             me trasladé a Madrid para realizar el <span class="study">Máster de Fisioterapia Respiratoria y Cardiaca</span> en la Universidad Autónoma de Madrid, y el <span class="study">Experto 
-            en Fisioterapia neurológica</span> de la Universidad Complutense de Madrid, ambos me han permitido especializarme en estos campos, para la atención 
+            en Fisioterapia Neurológica</span> de la Universidad Complutense de Madrid, ambos me han permitido especializarme en estos campos, para la atención 
             de niños y adultos con patologías respiratorias y neurológicas, y adquirir competencias específicas y mejorar mis conocimientos dentro de estos campos.
           </p>
           <p>
@@ -96,10 +163,10 @@
           </p>
         </div>
         <div class=media-section>
-          <div class="photo">Foto</div>
+          <img src="./img/about_me_sq.png" alt="Paula Blanco" class="photo">
           <div class="social-networks">
-            <a href="https://www.instagram.com/pblancofisio/" target="_blank"><img src="./img/instagram-purple.svg" alt="instagram-icon"></a>
-            <a href="https://www.linkedin.com/in/paula-blanco-orive-417335107/" target="_blank"><img src="./img/linkedin-purple.svg" alt="linkedin-icon"></a>
+            <a href="https://www.instagram.com/pblancofisio/" target="_blank"><img src="./img/instagram-purple.svg" alt="instagram-icon" width="50px" height="50px"></a>
+            <a href="https://www.linkedin.com/in/paula-blanco-orive-417335107/" target="_blank"><img src="./img/linkedin-purple.svg" alt="linkedin-icon" width="50px" height="50px"></a>
           </div>
         </div>
       </div>
@@ -107,46 +174,56 @@
 
     <a name="services">&nbsp;</a>
     <section>
-      <h1>Servicios</h1>
+      <h3>Servicios</h3>
       <div class="tabs">
-        <button class="tablinks active" onclick="selectTab(event, 'neuro')"><img src="img/brain.svg" alt="brain-icon" width="32px"><span>Fisioterapia neurológica</span></button>
-        <button class="tablinks" onclick="selectTab(event, 'infantil')"><img src="img/kid.svg" alt="kid-icon" width="32px"><span>Fisioterapia infantil</span></button>
-        <button class="tablinks" onclick="selectTab(event, 'respiratoria')"><img src="img/lungs.svg" alt="lungs-icon" width="32px"><span>Fisioterapia respiratoria</span></button>
-        <button class="tablinks" onclick="selectTab(event, 'online')"><img src="img/doctor.svg" alt="online-icon" width="32px"><span>Consultas online</span></button>
+        <button class="tablinks active" onclick="selectTab(event, 'neuro')"><img src="img/brain.svg" alt="brain-icon" width="32px" height="32px"><span>Fisioterapia neurológica</span></button>
+        <button class="tablinks" onclick="selectTab(event, 'infantil')"><img src="img/kid.svg" alt="kid-icon" width="32px" height="32px"><span>Fisioterapia infantil</span></button>
+        <button class="tablinks" onclick="selectTab(event, 'respiratoria')"><img src="img/lungs.svg" alt="lungs-icon" width="32px" height="32px"><span>Fisioterapia respiratoria</span></button>
+        <button class="tablinks" onclick="selectTab(event, 'online')"><img src="img/doctor.svg" alt="online-icon" width="32px" height="32px"><span>Consultas online</span></button>
       </div>
 
       <div id="neuro" class="tabcontent" style="display: block;">
-        <h2>Fisioterapia neurológica</h2>
-        <h3>¿Qué es?</h3>
+        <h4>Fisioterapia neurológica</h4>
+        <h5>¿Qué es?</h5>
         <p>
           Se centra en la rehabilitación de personas con alteración neurológica, buscando adquirir una mayor autonomía e independencia de las 
           actividades de la vida diaria, mediante técnicas como el Método Bobath, ejercicio terapéutico cognoscitivo, ejercicio 
           terapéutico, entrenamiento de fuerza, técnicas manuales, punción seca, reeducación de la marcha...
         </p>
-        <h3>Objetivos</h3>
-        <p>
-          Sus objetivos incluyen reducir los síntomas provocados por el daño nervioso, buscando una mejor calidad de vida de los pacientes. 
-          Entre ellos se encuentran:
-        </p>
-        <ul>
-          <li>Dolor</li>
-          <li>Rigidez</li>
-          <li>Pérdida de movilidad</li>
-          <li>Alteración sensitiva</li>
-          <li>Alteraciones del equilibrio y coordinación</li>
-        </ul>
-        <h3>Beneficios</h3>
-        <p>
-          Sus beneficios son notables en patologías como:
-        </p>
-        <ul>
-          <li>Ictus</li>
-          <li>Esclerosis Múltiple</li>
-          <li>Esclerosis Lateral Amiotrófica</li>
-          <li>Lesión Medular</li>
-          <li>Enfermedades poco frecuentes con afectación musculoesquelética</li>
-          <li>Otras enfermedades neurodegenerativas</li>
-        </ul>
+        <div class="with-img">
+          <img src="./img/neuro_1.png" alt="neurology_image">
+          <div>
+            <h5>Objetivos</h5>
+            <p>
+              Sus objetivos incluyen reducir los síntomas provocados por el daño nervioso, buscando una mejor calidad de vida de los pacientes. 
+              Entre ellos se encuentran:
+            </p>
+            <ul>
+              <li>Dolor</li>
+              <li>Rigidez</li>
+              <li>Pérdida de movilidad</li>
+              <li>Alteración sensitiva</li>
+              <li>Alteraciones del equilibrio y coordinación</li>
+            </ul>
+          </div>
+        </div>
+        <div class="with-img">
+          <div>
+            <h5>Beneficios</h5>
+            <p>
+              Sus beneficios son notables en patologías como:
+            </p>
+            <ul>
+              <li>Ictus</li>
+              <li>Esclerosis Múltiple</li>
+              <li>Esclerosis Lateral Amiotrófica</li>
+              <li>Lesión Medular</li>
+              <li>Enfermedades poco frecuentes</li>
+              <li>Otras enfermedades neurodegenerativas</li>
+            </ul>
+          </div>
+          <img src="./img/neuro_2.png" alt="neurology_image">
+        </div>
         <p class="name">
           Valoramos la situación de cada paciente para adaptar las sesiones de fisioterapia a su condición actual, marcamos objetivos concretos y motivacionales 
           para una mejor adherencia al tratamiento.
@@ -154,38 +231,50 @@
       </div>
 
       <div id="infantil" class="tabcontent">
-        <h2>Fisioterapia infantil</h2>
-        <h3>¿Qué es?</h3>
-        <p>
-          Se centra en el tratamiento y estimulación de bebés, niños y adolescentes, favoreciendo un adecuado desarrollo psicomotor y un mayor nivel funcional.
-        </p>
-        <p>
-          Desde nuestro punto de vista, el trabajo centrado en la familia es la mejor opción para cubrir las necesidades que se puedan presentar y dar un apoyo 
-          constante al crecimiento del niño.
-        </p>
-        <h3>Objetivos</h3>
-        <ul>
-          <li>Mejora en la motricidad gruesa y fina</li>
-          <li>Coordinación</li>
-          <li>Equilibrio</li>
-          <li>Interacción con el entorno</li>
-          <li>Mejora sensitiva y motora</li>
-          <li>Progreso del desarrollo cognitivo e intelectual</li>
-        </ul>
-        <h3>Beneficios</h3>
-        <p>
-          La fisioterapia infantil favorece el desarrollo en niños/as con:
-        </p>
-        <ul>
-          <li>Parálisis cerebral infantil</li>
-          <li>Síndrome de Down</li>
-          <li>Atrofia muscular espinal</li>
-          <li>Síndrome de Duchenne</li>
-          <li>Enfermedades poco frecuentes</li>
-          <li>Alteraciones en el neurodesarrollo</li>
-          <li>Niños prematuros</li>
-          <li>Otras patologías</li>
-        </ul>
+        <div class="with-img">
+          <div>
+            <h4>Fisioterapia infantil</h4>
+            <h5>¿Qué es?</h5>
+            <p>
+              Se centra en el tratamiento y estimulación de bebés, niños y adolescentes, favoreciendo un adecuado desarrollo psicomotor y un mayor nivel funcional.
+            </p>
+            <p>
+              Desde nuestro punto de vista, el trabajo centrado en la familia es la mejor opción para cubrir las necesidades que se puedan presentar y dar un apoyo 
+              constante al crecimiento del niño.
+            </p>
+          </div>
+          <img src="./img/kid_1.png" alt="Child photo">
+        </div>
+        <div>
+          <h5>Objetivos</h5>
+          <ul>
+            <li>Mejora en la motricidad gruesa y fina</li>
+            <li>Coordinación</li>
+            <li>Equilibrio</li>
+            <li>Interacción con el entorno</li>
+            <li>Mejora sensitiva y motora</li>
+            <li>Progreso del desarrollo cognitivo e intelectual</li>
+          </ul>
+        </div>
+        <div class="with-img">
+          <img src="./img/kid_2.png" alt="">
+          <div>
+            <h5>Beneficios</h5>
+            <p>
+              La fisioterapia infantil favorece el desarrollo en niños/as con:
+            </p>
+            <ul>
+              <li>Parálisis cerebral infantil</li>
+              <li>Síndrome de Down</li>
+              <li>Atrofia muscular espinal</li>
+              <li>Síndrome de Duchenne</li>
+              <li>Enfermedades poco frecuentes</li>
+              <li>Alteraciones en el neurodesarrollo</li>
+              <li>Niños prematuros</li>
+              <li>Otras patologías</li>
+            </ul>
+          </div>
+        </div>
         <p class="name">
           Todos nuestros tratamientos incluyen una valoración inicial con unos objetivos a corto y largo plazo, dando lugar a un plan de intervención individual, 
           también trabajamos con pautas a familias y cuidadores buscando intensificar la terapia y obtener mejores resultados.
@@ -193,16 +282,25 @@
       </div>
 
       <div id="respiratoria" class="tabcontent">
-        <h2>Fisioterapia respiratoria</h2>
-        <h3>¿Qué es?</h3>
-        <p>
-          Esta especialidad trata de prevenir y reducir la sintomatología respiratoria de lactantes, niños y adultos, dando lugar a una mejora en la calidad de vida.
-        </p>
-        <p>
-          Consta de un gran número de técnicas entre las que se incluyen: lavados nasales, transporte de secreciones y evacuación de las mismas, reeducación del 
-          patrón respiratorio, rehabilitación pulmonar…
-        </p>
-        <h3>Objetivos</h3>
+        <div class="with-img align-end">
+          <div>
+            <h4>Fisioterapia respiratoria</h4>
+            <h5>¿Qué es?</h5>
+            <p>
+              Esta especialidad trata de prevenir y reducir la sintomatología respiratoria de lactantes, niños y adultos, dando lugar a una mejora en la calidad de vida.
+            </p>
+            <p>
+              Consta de un gran número de técnicas entre las que se incluyen: lavados nasales, transporte de secreciones y evacuación de las mismas, reeducación del 
+              patrón respiratorio, rehabilitación pulmonar…
+            </p>
+            <p>
+              En niños pequeños, debido a la inmadurez de su sistema respiratorio, y sobre todo en los meses de invierno, nos encontramos con episodios de 
+              hipersecreciones susceptibles de tratamiento, para prevenir complicaciones.
+            </p>
+          </div>
+          <img src="./img/respi.png" alt="respiratory">
+        </div>
+        <h5>Objetivos</h5>
         <ul>
           <li>Reducir la sensación de cansancio y dificultad respiratoria</li>
           <li>Expectoración</li>
@@ -212,11 +310,7 @@
           <li>Reducir broncoespasmo</li>
           <li>Reducir el riesgo de infecciones e ingresos hospitalarios</li>
         </ul>
-        <p>
-          En niños pequeños, debido a la inmadurez de su sistema respiratorio, y sobre todo en los meses de invierno, nos encontramos con episodios de 
-          hipersecreciones susceptibles de tratamiento, para prevenir complicaciones.
-        </p>
-        <h3>Beneficios</h3>
+        <h5>Beneficios</h5>
         <p>
           Sus beneficios son notables en patologías como:
         </p>
@@ -266,11 +360,12 @@
 
     <a name="contact">&nbsp;</a>
     <section>
-      <h1>Contacto</h1>
+      <h3 class="contact-title">Contacto</h3>
       <div class="contact-section">
+        <img src="./img/contact_1.png" alt="contact-image" class="contact-photo-horizontal">
         <div class="contact-info">
           <div class="contact-card">
-            <img src="./img/schedule.svg" alt="schedule-icon">
+            <img src="./img/schedule.svg" alt="schedule-icon" width="50px" height="50px">
             <div>
               <p>Horario</p>
               <p>L-V de 9h a 21h</p>
@@ -278,16 +373,16 @@
           </div>
           <div class="contact-card">
             <a href="mailto:info@paulablancofisioterapia.com?subject=Contacto a través de la página">
-              <img src="./img/email.svg" alt="email-icon">
+              <img src="./img/email.svg" alt="email-icon" width="50px" height="50px">
               <div>
                 <p>Email</p>
-                <p id="min-text">info@paulablancofisioterapia.com</p>
+                <p class="min-text">info@paulablancofisioterapia.com</p>
               </div>
             </a>
           </div>
           <div class="contact-card">
             <a href="tel:+34644210573">
-              <img src="./img/phone.svg" alt="phone-icon">
+              <img src="./img/phone.svg" alt="phone-icon" width="50px" height="50px">
               <div>
                 <p>Teléfono</p>
                 <p>644 21 05 73</p>
@@ -296,7 +391,7 @@
           </div>
           <div class="contact-card">
             <a href="https://www.instagram.com/pblancofisio/" target="_blank">
-              <img src="./img/instagram.svg" alt="instagram-icon">
+              <img src="./img/instagram.svg" alt="instagram-icon" width="50px" height="50px">
               <div>
                 <p>Instagram</p>
                 <p>Paula Blanco</p>
@@ -305,7 +400,7 @@
           </div>
           <div class="contact-card">
             <a href="https://goo.gl/maps/JqwTzVWeLkfJXJMc6" target="_blank">
-              <img src="./img/location.svg" alt="location-icon">
+              <img src="./img/location.svg" alt="location-icon" width="50px" height="50px">
               <div>
                 <p>Centro eQilibrio</p>
                 <p style="font-size: 18px;">C/ Guardia Civil nº5 Bajo 09004 Burgos</p>
@@ -314,24 +409,15 @@
             </a>
           </div>
         </div>
-
-        <form enctype="text/plain" method="POST" action="mailto:info@paulablancofisioterapia.com?subject=Contacto a través de la página" id="contact-form">
-          <div>
-            <input type="text" name="Nombre" placeholder="Nombre">
-            <input type="text" name="%0ACorreo" placeholder="Mail">
-            <input type="text" name="%0ATelefono" placeholder="Teléfono">
-          </div>
-          <textarea name="%0AMensaje" placeholder="Tu mensaje" rows="4"></textarea>
-          <input type="submit" value="Enviar">
-        </form>
+        <img src="./img/contact_2.png" alt="contact-image" class="contact-photo-vertical">
       </div>
     </section>
   </main>
 
   <footer>
-    <a href="https://www.cpfcyl.com/" target="_blank"><div class="footer-image"><img src="./img/fisioterapia_cyl.svg" alt="logo-fisioterapeutas-cyl"></div></a>
-    <a href="https://www.separ.es/" target="_blank"><div class="footer-image"><img src="./img/separ.png" alt="logo-separ"></div></a>
-    <a href="https://centroeqilibrio.com/" target="_blank"><div class="footer-image"><img src="./img/eqilibrio.png" alt="logo-centro-eqilibrio"></div></a>
+    <a href="https://www.cpfcyl.com/" target="_blank"><div class="footer-image"><img src="./img/fisioterapia_cyl.svg" alt="logo-fisioterapeutas-cyl" width="250px" height="105px"></div></a>
+    <a href="https://www.separ.es/" target="_blank"><div class="footer-image"><img src="./img/separ.png" alt="logo-separ" width="250px" height="105px"></div></a>
+    <a href="https://centroeqilibrio.com/" target="_blank"><div class="footer-image"><img src="./img/eqilibrio.png" alt="logo-centro-eqilibrio" width="250px" height="105px"></div></a>
     <ul class="policy">
       <li><a href="privacy.html">Política de Privacidad</a></li>
       <li><a href="legal-advice.html">Aviso legal</a></li>
@@ -340,15 +426,15 @@
   </footer>
   <div id="snackbar" class="toast">
     <div class="cookies-content" id="cookies-content">
-      <h1>Política de Cookies</h1>
+      <h2>Política de Cookies</h2>
       <p>
         Paula Blanco en cumplimiento de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico (LSSI). Texto consolidado a fecha 10 de mayo de 2014 (Artículos 2 en relación con la definición del Anexo a), 22.2, 37, 38.4 g), 38.3 i)) informa acerca de la Política de cookies de su sitio web a través de los siguientes párrafos. Para más información acerca de esta política u otras de la web: www.paulablancofisioterapia.com Asimismo, le informa de que al navegar en el Sitio Web usted está prestando su consentimiento para poder utilizarlas.
       </p>
-      <h2>¿QUÉ SON LAS COOKIES?</h2>
+      <h3>¿QUÉ SON LAS COOKIES?</h3>
       <p>
         Una cookie es un archivo que se descarga y almacena en el equipo del usuario al acceder a determinadas páginas web, para almacenar y recuperar información sobre la navegación que se realiza desde ese equipo. Las cookies son esenciales para el funcionamiento de Internet, aportando ventajas para la prestación de servicios interactivos, facilitándole la navegación y usabilidad de nuestra web. Tenga en cuenta que las cookies no pueden dañar su equipo y que a cambio el que estén activadas nos ayudan a identificar y resolver los errores.
       </p>
-      <h2>BLOQUEO O DESHABILITADO DE COOKIES</h2>
+      <h3>BLOQUEO O DESHABILITADO DE COOKIES</h3>
       <p>
         El usuario puede permitir, bloquear o eliminar el registro de los datos facilitados por las cookies instaladas en tu equipo mediante la configuración de las opciones del navegador instalado en su ordenador el plug-in de navegador disponible <a href="https://tools.google.com/dlpage/gaoptout?hl=es">a través de este enlace</a>.
       </p>
