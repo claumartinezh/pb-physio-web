@@ -179,6 +179,7 @@ section h3 {
   color: #CC0099;
   text-transform: uppercase;
   margin-top: 30px;
+  font-size: 30px;
 }
 
 .info-section {
@@ -224,13 +225,18 @@ p .study {
 .contact-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 20px 10px;
   border: 2px solid #009999;
   border-radius: 20px;
   padding: 15px;
   background-color: #DCFAF7;
+  height: 420px;
+}
+
+.contact-info .contact-card {
+  margin: 0;
 }
 
 .contact-card {
@@ -276,6 +282,25 @@ p .study {
 .contact-card a {
   display: flex;
   color: #009999;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-photo-horizontal {
+  width: 280px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.contact-photo-vertical {
+  display: none;
+  border-radius: 20px;
 }
 
 a {
@@ -516,6 +541,17 @@ section.legal h3 {
     min-width: 290px;
   }
 
+  header nav h1 .title {
+    font-size: 32px;
+    font-family: 'Cabin';
+    line-height: 50px;
+    transition: 0.3s;
+  }
+
+  header nav h1 .second-title {
+    transition: 0.3s;
+  }
+
   .nav-list {
     flex-grow: 5;
     display: block;
@@ -667,16 +703,19 @@ section.legal h3 {
   }
 
   .contact-section {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     width: 70%;
-    justify-content: space-around;
+    gap: 5%;
   }
 
-  .contact-photo {
+  .contact-photo-horizontal {
+    display: none;
+  }
+
+  .contact-photo-vertical {
+    display: block;
     width: 350px;
     height: 450px;
-    border-radius: 20px;
   }
 
   footer {

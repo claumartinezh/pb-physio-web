@@ -53,9 +53,15 @@ function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       document.getElementById("headerLogo").style.width = "100px";
       document.getElementById("navList").style.top = "-5px";
+      document.getElementById("title").style.fontSize = "28px";
+      document.getElementById("title").style.lineHeight = "30px";
+      document.getElementById("subtitle").style.fontSize = "20px";
     } else {
       document.getElementById("headerLogo").style.width = "130px";
       document.getElementById("navList").style.top = "0";
+      document.getElementById("title").style.fontSize = "32px";
+      document.getElementById("title").style.lineHeight = "50px";
+      document.getElementById("subtitle").style.fontSize = "22px";
     }
   }
 }
