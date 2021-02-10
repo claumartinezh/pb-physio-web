@@ -228,8 +228,8 @@ p .study {
   align-items: center;
   margin: 20px 10px;
   border: 2px solid #009999;
-  border-radius: 5px;
-  padding: 15px 15px 0 15px;
+  border-radius: 20px;
+  padding: 15px;
   background-color: #DCFAF7;
 }
 
@@ -664,6 +664,19 @@ section.legal h3 {
 
   .align-end {
     align-items: flex-end !important;
+  }
+
+  .contact-section {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+  }
+
+  .contact-photo {
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
   }
 
   footer {
