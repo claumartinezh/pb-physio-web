@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ess">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/logo-banner.png">
+  <title>Fisioterapia | Paula Blanco</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="nav-a" href=""><img src="./img/logo400.png" class="logo" alt="banner-logo"></a>
+      <div class="nav-list box" id="nav-list">
+        <ul>
+          <li><a href="#about" onclick="_displayMenu()">Sobre mí</a></li>
+          <li><a href="#services" onclick="_displayMenu()">Servicios</a></li>
+          <li><a href="#prices" onclick="_displayMenu()">Precios</a></li>
+          <li><a href="#contact" onclick="_displayMenu()">Contacto</a></li>
+        </ul>
+      </div>
+      <div onclick="_displayMenu()" title="Menú principal" class="menu-button"><i class="material-icons">menu</i>
+    </nav>
+  </header>
+
+  <main>
+    <div class="summary">
+      <div class="contact-card">
+        <img src="./img/schedule.svg" alt="schedule-icon">
+        <div>
+          <p>Horario</p>
+          <p>L-V de 9h a 21h</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <img src="./img/email.svg" alt="email-icon">
+        <div>
+          <p>Email</p>
+          <p>miemail@email.com</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <img src="./img/phone.svg" alt="phone-icon">
+        <div>
+          <p>Teléfono</p>
+          <p>600000000</p>
+        </div>
+      </div>
+    </div>
+    <a name="about">&nbsp;</a>
+    <section>
+      <h1>Sobre mí</h1>
+      <div class="info-section">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vel, montes orci neque tellus nascetur suscipit cras cubilia placerat, eget vestibulum risus est ante himenaeos nibh. Volutpat aliquet tincidunt tristique hendrerit dapibus justo vestibulum, class at vitae conubia habitasse. Posuere quam iaculis donec blandit dui nullam, nisl hac a convallis congue, scelerisque penatibus integer diam accumsan.
+          Lorem ipsum dolor sit amet consectetur<br><br> adipiscing, elit risus netus fermentum cum ultricies ligula, morbi facilisis egestas praesent vivamus. Magnis fusce luctus potenti facilisis libero ligula interdum sociis, quisque etiam elementum iaculis cras ullamcorper netus feugiat, aptent eget convallis enim odio nec ridiculus. Pellentesque parturient nisi ullamcorper magna tincidunt tellus risus diam ac lobortis volutpat, est tortor imperdiet pulvinar viverra mauris mattis ad accumsan aenean, sagittis dui cursus non quam ante commodo dictum mollis etiam.
+          Convallis erat mus proin
+        </p>
+        <div class="photo">Foto</div>
+      </div>
+    </section>
+
+    <a name="services">&nbsp;</a>
+    <section>
+      <h1>Servicios</h1>
+      <div class="info-section">
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur, adipiscing elit mollis.</li>
+          <li>Vehicula mollis integer dictumst pretium, congue placerat vivamus.</li>
+          <li>Tempor iaculis tristique class euismod sociis, lobortis aliquet conubia leo.</li>
+          <li>Neque tristique sed natoque congue dui elementum, porttitor a molestie facilisis.</li>
+        </ul>
+      </div>
+    </section>
+
+    <a name="prices">&nbsp;</a>
+    <section>
+      <h1>Precios</h1>
+      <div class="info-section">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vel, montes orci neque tellus nascetur suscipit cras cubilia placerat, eget vestibulum risus</p>
+        <p> est ante himenaeos nibh. Volutpat aliquet tincidunt tristique hendrerit dapibus justo vestibulum, class at vitae conubia habitasse.</p>
+      </div>
+    </section>
+
+    <a name="contact">&nbsp;</a>
+    <section>
+      <h1>Contacto</h1>
+      <div class="contact-section">
+        <div class="contact-info">
+          <div class="contact-card">
+            <img src="./img/schedule.svg" alt="schedule-icon">
+            <div>
+              <p>Horario</p>
+              <p>L-V de 9h a 21h</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <img src="./img/email.svg" alt="email-icon">
+            <div>
+              <p>Email</p>
+              <p>miemail@email.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <img src="./img/phone.svg" alt="phone-icon">
+            <div>
+              <p>Teléfono</p>
+              <p>600000000</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <img src="./img/instagram.svg" alt="instagram-icon">
+            <div>
+              <p>Instagram</p>
+              <p>Paula Blanco</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <img src="./img/location.svg" alt="location-icon">
+            <div>
+              <p>Centro eQilibrio</p>
+              <p style="font-size: 18px;">C/ Guardia Civil nº5 Bajo 09004 Burgos</p>
+              <p>947264020</p>
+            </div>
+          </div>
+        </div>
+
+        <form action="" id="contact-form">
+          <div>
+            <input type="text" name="name" placeholder="Nombre">
+            <input type="text" name="mail" placeholder="Mail">
+            <input type="text" name="phone" placeholder="Teléfono">
+          </div>
+          <textarea name="mensaje" placeholder="Tu mensaje" rows="4"></textarea>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
+
+<script>
+  function _displayMenu() {
+    var mobileMenu = document.getElementById('nav-list');
+
+    if (mobileMenu.classList.contains('hidden')) {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => mobileMenu.classList.remove('visually-hidden'), 20);
+    } else {
+      mobileMenu.classList.add('visually-hidden');
+      mobileMenu.addEventListener('transitionend', function(e) {
+        mobileMenu.classList.add('hidden');
+      }, {
+        capture: false,
+        once: true,
+        passive: false
+      });
+    }
+  }
+  </script>
