@@ -708,13 +708,16 @@ section.legal h3 {
     gap: 5%;
   }
 
+  .contact-title {
+    margin-right: 250px;
+  }
+
   .contact-photo-horizontal {
     display: none;
   }
 
   .contact-photo-vertical {
     display: block;
-    width: 350px;
     height: 450px;
   }
 
