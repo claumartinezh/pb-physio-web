@@ -133,7 +133,7 @@ section {
   padding: 40px 20px;
   background-size: cover;
   height: auto;
-  background-image: url('./img/banner1.png');
+  background-image: url('./img/banner_mobile.webp') no-repeat center;
   text-shadow: 1px 1px black;
   color: #FFF;
 }
@@ -651,6 +651,7 @@ section.legal h3 {
   .title-info {
     padding: 50px 130px;
     height: 400px;
+    background-image: url('./img/banner.webp');
   }
 
   .info-section p {
