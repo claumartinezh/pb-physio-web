@@ -133,7 +133,7 @@ section {
   padding: 40px 20px;
   background-size: cover;
   height: auto;
-  background-image: url('./img/banner_mobile.webp') no-repeat center;
+  background-image: url('./img/banner_mobile.webp');
   text-shadow: 1px 1px black;
   color: #FFF;
 }
