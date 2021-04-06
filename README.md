@@ -13,9 +13,11 @@
 
 - **Claudia Martínez**
 
-![](https://img.shields.io/badge/gmail-DDDDDD?style=for-the-badge&logo=gmail&link=https://github.com/claumartinezh)
-![](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&link=https://github.com/claumartinezh)
-![](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&link=https://www.linkedin.com/in/claudia-mh/)
+<a href="mailto:claumartinezh@gmail.com"><img src="https://img.shields.io/badge/gmail-DDDDDD?style=for-the-badge&logo=gmail" alt="Claudia Martínez mail"/>
+</a>
+<a href="https://github.com/claumartinezh"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" alt="Claudia Martínez github" /></a>
+<a href="https://www.linkedin.com/in/claudia-mh"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/></a>
+
 
 - **Borja Gete**
 
