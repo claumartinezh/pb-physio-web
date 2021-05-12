@@ -472,7 +472,15 @@ footer a:hover {
 .collab-image {
   margin: 10px;
   padding: 15px;
-  width: 300px;
+  width: 220px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+footer h4 {
+  color: white;
+  font-weight: normal;
+  font-size: 1.5em;
 }
 
 .toast {
