@@ -331,6 +331,13 @@ footer a:hover {
   opacity: 0.7;
 }
 
+footer h4 {
+  color: white;
+  font-weight: normal;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
 .footer-image {
   margin: 10px;
   background: #ffffff;
@@ -343,6 +350,23 @@ footer a:hover {
 
 .footer-image img {
   width: inherit;
+}
+
+.collabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  gap: 20px;
+}
+
+.collab-image {
+  padding: 15px;
+  width: 220px;
+  background: #FFFFFF;
+  border-radius: 15px;
 }
 
 .policy {
