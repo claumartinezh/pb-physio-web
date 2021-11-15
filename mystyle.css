@@ -232,17 +232,31 @@ p .study {
   border-radius: 20px;
   padding: 15px;
   background-color: #DCFAF7;
-  height: 420px;
+  gap: 1.5rem;
 }
 
 .contact-info .contact-card {
   margin: 0;
+  width: 250px;
+}
+
+.timetable-container {
+  width: 250px;
+}
+
+.timetable {
+  list-style: none;
+  padding: 0 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #009999;
+  font-size: 18px;
 }
 
 .contact-card {
   color: #009999;
   font-size: 20px;
-  width: 250px;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -265,7 +279,7 @@ p .study {
   margin: 0;
 }
 
-.contact-card p:nth-of-type(1) {
+.contact-card .title {
   font-weight: bold;
   margin: 0;
 }
@@ -316,12 +330,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0 60px 0;
+  padding: 60px 0;
   background: #008080;
   gap: 10px;
 }
 
-footer a {
+footer a, .footer-text {
   opacity: 1;
   transition: 0.3s ease;
   color: #00CCCC;
@@ -329,6 +343,13 @@ footer a {
 
 footer a:hover {
   opacity: 0.7;
+}
+
+footer h4 {
+  color: white;
+  font-weight: normal;
+  font-size: 1.5em;
+  margin: 10px 0;
 }
 
 .footer-image {
@@ -343,6 +364,16 @@ footer a:hover {
 
 .footer-image img {
   width: inherit;
+}
+
+.collabs-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.spaced {
+  gap: 2rem;
 }
 
 .policy {
@@ -532,7 +563,6 @@ section.legal h3 {
     margin: 0;
   }
 
-
   /* Landing page */
   .menu-button {
     display: none;
@@ -676,8 +706,12 @@ section.legal h3 {
     opacity: 0.5;
   }
 
+  .contact-info {
+    height: 380px;
+  }
+
   .contact-card {
-    width: 300px;
+    width: 300px !important;
     margin-left: 20px;
   }
 
@@ -722,12 +756,8 @@ section.legal h3 {
 
   .contact-section {
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     gap: 5%;
-  }
-
-  .contact-title {
-    margin-right: 250px;
   }
 
   .contact-photo-horizontal {
@@ -736,16 +766,26 @@ section.legal h3 {
 
   .contact-photo-vertical {
     display: block;
-    height: 450px;
+    height: 410px;
   }
 
   footer {
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: flex-start;
   }
 
   .footer-image {
     width: 250px;
+  }
+
+  .timetable-container {
+    width: 220px;
+    text-align: left;
+  }
+
+  .timetable {
+    margin-top: 3rem;
   }
 }
 
