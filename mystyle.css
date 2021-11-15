@@ -345,6 +345,13 @@ footer a:hover {
   opacity: 0.7;
 }
 
+footer h4 {
+  color: white;
+  font-weight: normal;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
 .footer-image {
   margin: 10px;
   background: #ffffff;
