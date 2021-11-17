@@ -116,6 +116,7 @@ main {
   background: white;
   margin: 0 auto;
   padding: 20px 30px 0px 25px;
+  gap: 16px;
 }
 
 section {
@@ -263,6 +264,14 @@ p .study {
   text-align: left;
   opacity: 1;
   transition: 0.3s ease;
+}
+
+.contact-card .schedule {
+  width: 340px !important;
+}
+
+.contact-card .phone {
+  width: 185px !important;
 }
 
 .contact-card:hover {
@@ -680,6 +689,7 @@ section.legal h3 {
     flex-direction: row;
     justify-content: center;
     padding: 30px;
+    gap: 30px;
   }
 
   .summary .contact-card {
@@ -744,8 +754,8 @@ section.legal h3 {
     height: 380px;
   }
 
-  .contact-card {
-    width: 300px !important;
+  .contact-card .phone{
+    width: 250px !important;
     margin-left: 20px;
   }
 
