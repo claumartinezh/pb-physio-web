@@ -460,15 +460,26 @@
     <a name="training">&nbsp;</a>
     <section>
       <h3>Formación</h3>
-      <div class="courses-section">
         <div class="course">
-          <img src="./img/teacher.svg" alt="Teacher" width="80px" height="80px">
-          <h4>Lorem ipsum dolor sit</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <div id="front" onclick="handleFlip()" class="cardFront course-content">
+            <img class="course-image" src="./img/teacher.svg" alt="Teacher" width="80px" height="80px">
+            <div>
+              <div>
+                <h4>Fisioterapia respiratoria infantil</h4>
+                <p class="course-subtitle">para fisioterapeutas y logopedas </p>
+              </div>
+              <p>29 y 30 de octubre en la <br> <a href="https://www.fivan.org/" target="_blank"><b>Fundación FIVAN</b></a> <br>(Valencia)</p>
+            </div>
+          </div>
+          <div id="back" onclick="handleFlip()" class="cardBack">
+            <ul>
+              <li><img src="img/check.png" alt="check" width="15px" height="15px">Repasaremos anatomía y fisiología del sistema respiratorio</li>
+              <li><img src="img/check.png" alt="check" width="15px" height="15px">Aprenderemos a valorar, tratar, y hacer recomendaciones en niños con alteraciones respiratorias</li>
+              <li><img src="img/check.png" alt="check" width="15px" height="15px">Conoceremos en qué patologías podemos actuar y qué técnicas son las adecuadas</li>
+              <li><img src="img/check.png" alt="check" width="15px" height="15px">Habrá casos clínicos reales</li>
+            </ul>
+          </div>
         </div>
-      </div>
     </section>
 
     <a name="contact">&nbsp;</a>

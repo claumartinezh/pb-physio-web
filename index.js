@@ -65,3 +65,11 @@ function scrollFunction() {
     }
   }
 }
+
+function handleFlip() {
+  const front = document.getElementById('front')
+  const back = document.getElementById('back')
+  const btn = document.getElementById('flip-btn')
+  front.classList.toggle('flipped')
+  back.classList.toggle('flipped')
+}
