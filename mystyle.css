@@ -341,10 +341,10 @@ section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6) {
   border-radius: 20px;
   flex-direction: column;
   font-size: 18px;
-  height: 380px;
+  height: 430px;
   position: relative;
   text-align: center;
-  width: 350px;
+  width: 325px;
 }
 
 .course h4 {
@@ -375,6 +375,34 @@ section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6) {
   align-items: baseline;
   gap: 10px;
   margin: 8px;
+}
+
+.course-button {
+  background: #CC0099;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 15px;
+  width: 80%;
+  margin-bottom: 10px;
+  box-shadow: 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.course-button:hover {
+  box-shadow: 20px 20px 20px -20px #006666;
+  font-weight: bold;
+}
+
+.course-front-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.course-image {
+  margin-top: 10px;
 }
 
 .cardFront,
@@ -937,6 +965,7 @@ section.legal h3 {
   .course-image {
     width: 150px;
     height: 150px;
+    margin: 0;
   }
 
   .course-content {
