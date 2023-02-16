@@ -73,3 +73,10 @@ function handleFlip(id) {
   front.classList.toggle('flipped')
   back.classList.toggle('flipped')
 }
+
+function toggleDoneTrainings() {
+  let hiddenCards = document.querySelectorAll('.hide');
+  let shownCards = document.querySelectorAll('.show');
+  hiddenCards.forEach(card => card.classList.replace('hide', 'show'));
+  shownCards.forEach(card => card.classList.replace('show', 'hide'));
+}
