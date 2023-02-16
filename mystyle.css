@@ -404,6 +404,7 @@ section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6) {
 
 .course-image {
   margin-top: 10px;
+  filter: invert(45%) sepia(44%) saturate(6928%) hue-rotate(157deg) brightness(96%) contrast(101%);
 }
 
 .cardFront,
