@@ -345,6 +345,7 @@ section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6) {
   position: relative;
   text-align: center;
   width: 325px;
+  margin: 16px;
 }
 
 .course h4 {
@@ -476,6 +477,26 @@ section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6) {
   margin-bottom: 0;
   margin-top: 0;
   font-size: 16px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.arrow-icon {
+  height: 12px;
+  width: 12px;
+  display: inline;
+}
+
+.phrase-elements {
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
 
 footer {
