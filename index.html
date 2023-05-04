@@ -511,7 +511,15 @@
     <a name="training">&nbsp;</a>
     <section>
       <h3>Formación</h3>
-        <div class="course">
+      <p>Actualmente no hay ninguna formación en curso.</p>
+        <p>
+          <a class="phrase-elements" onclick="toggleDoneTrainings()">
+            <span class="hide">Ocultar </span><span class="show">Ver </span><span>formaciones realizadas</span>
+            <img src="./img/up-arrow.png" class="hide arrow-icon" />
+            <img src="./img/down-arrow.png" class="show arrow-icon" />
+          </a>
+        </p>
+        <div class="course hide">
           <div id="front-1" onclick="handleFlip(1)" class="cardFront course-content">
             <img class="course-image" src="./img/nose.png" alt="Nose" width="80px" height="80px">
             <div class="course-front-info">
@@ -537,13 +545,6 @@
             </ul>
           </div>
         </div>
-        <p>
-          <a class="phrase-elements" onclick="toggleDoneTrainings()">
-            <span class="hide">Ocultar </span><span class="show">Ver </span><span>formaciones realizadas</span>
-            <img src="./img/up-arrow.png" class="hide arrow-icon" />
-            <img src="./img/down-arrow.png" class="show arrow-icon" />
-          </a>
-        </p>
         <div class="course hide">
           <div id="front-2" onclick="handleFlip(2)" class="cardFront course-content">
             <img class="course-image" src="./img/lungs.svg" alt="Teacher" width="80px" height="80px">
