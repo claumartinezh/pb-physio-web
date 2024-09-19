@@ -341,7 +341,7 @@ section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6) {
   border-radius: 20px;
   flex-direction: column;
   font-size: 18px;
-  height: 510px;
+  height: 300px;
   position: relative;
   text-align: center;
   width: 325px;
@@ -400,6 +400,7 @@ section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6) {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 400px;
 }
 
 .course-image {
@@ -967,6 +968,8 @@ section.legal h3 {
 
   .reviews-section {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 }
