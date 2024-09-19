@@ -670,6 +670,7 @@ footer h4 {
 
 .tabcontent img {
   object-fit: cover;
+  object-position: left top;
   width: 300px;
   border-radius: 20px;
 }
