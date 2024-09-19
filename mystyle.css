@@ -546,6 +546,12 @@ footer h4 {
   margin-bottom: 16px;
 }
 
+.collabs-list .collab-image {
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+}
+
 .spaced {
   gap: 2rem;
 }
