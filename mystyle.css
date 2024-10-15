@@ -407,6 +407,10 @@ section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6) {
   filter: invert(45%) sepia(44%) saturate(6928%) hue-rotate(157deg) brightness(96%) contrast(101%);
 }
 
+.course-flip {
+  align-self: self-end;
+}
+
 .cardFront,
 .cardBack {
   box-sizing: border-box;
