@@ -552,7 +552,13 @@ footer h4 {
 }
 
 .collabs-list .collab-image {
-  background: #ffffff;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.collabs-list .collab-image-black {
+  background-color: #0A1528;
   padding: 8px;
   border-radius: 10px;
 }
