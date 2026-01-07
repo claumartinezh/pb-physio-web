@@ -81,6 +81,11 @@
         },
         {
           "@type": ["medicalSpecialty", "TherapeuticProcedure", "PhysicalTherapy", "Physiotherapy" ],
+          "name": "Fisioterapia Respiratoria infantil",
+          "alternateName": "Respiratoria infantil"
+        },
+        {
+          "@type": ["medicalSpecialty", "TherapeuticProcedure", "PhysicalTherapy", "Physiotherapy" ],
           "name": "Fisioterapia Neurologica",
           "alternateName": "Neuro"
         },
@@ -234,10 +239,12 @@
       <div class="tabs">
         <button class="tablinks active" onclick="selectTab(event, 'neuro')"><img src="img/brain.svg" alt="Brain icon"
             width="32px" height="32px"><span>Fisioterapia neurológica</span></button>
-        <button class="tablinks" onclick="selectTab(event, 'infantil')"><img src="img/kid.svg" alt="Kid icon"
+        <button class="tablinks" onclick="selectTab(event, 'infantil')"><img src="img/kid.png" alt="Kid icon"
             width="32px" height="32px"><span>Fisioterapia infantil</span></button>
+        <button class="tablinks" onclick="selectTab(event, 'respi-infantil')"><img src="img/bronchus.png" alt="Lungs icon"
+            width="32px" height="32px"><span>Fisioterapia respiratoria infantil</span></button>
         <button class="tablinks" onclick="selectTab(event, 'respiratoria')"><img src="img/lungs.svg" alt="Lungs icon"
-            width="32px" height="32px"><span>Fisioterapia respiratoria</span></button>
+            width="32px" height="32px"><span>Fisioterapia respiratoria adultos</span></button>
         <button class="tablinks" onclick="selectTab(event, 'online')"><img src="img/doctor.svg" alt="Online icon"
             width="32px" height="32px"><span>Consultas online</span></button>
       </div>
@@ -363,40 +370,40 @@
         </p>
       </div>
 
-      <div id="respiratoria" class="tabcontent">
-        <h4>Fisioterapia respiratoria</h4>
+      <div id="respi-infantil" class="tabcontent">
+        <h4>Fisioterapia respiratoria infantil</h4>
         <h5>¿Qué es?</h5>
-        <div class="with-img align-end">
+        <div class="with-img align-center">
           <img src="./img/kid_3.webp" alt="Respiratory photo">
           <div>
             <p>
-              Esta especialidad trata de prevenir y reducir la sintomatología respiratoria de lactantes, niños y
-              adultos,
-              dando lugar a una mejora en la calidad de vida.
+              Esta especialidad trata de prevenir y reducir la sintomatología respiratoria de lactantes, 
+              niños y favoreciendo su desarrollo descanso y alimentación.
             </p>
             <p>
               Consta de un gran número de técnicas entre las que se incluyen: lavados nasales, transporte de secreciones
-              y evacuación de las mismas, reeducación del patrón respiratorio, rehabilitación pulmonar…
+              y evacuación de las mismas.
             </p>
             <p>
-              En niños pequeños, debido a la inmadurez de su sistema respiratorio, y sobre todo en los meses de
-              invierno,
-              nos encontramos con episodios de hipersecreciones susceptibles de tratamiento, para prevenir
-              complicaciones.
+              En niños pequeños, debido a la inmadurez de su sistema respiratorio, y sobre todo en los meses de invierno, 
+              nos encontramos con episodios de hipersecreciones susceptibles de tratamiento, para prevenir complicaciones.
+            </p>
+            <p>
+              Trabajamos en el correcto desarrollo de la zona orofacial, y en todos aquellos niños respiradores orales en 
+              los que podemos prevenir problemas a futuro. Tratamos otitis recurrentes, patologías de adenoide y amígdalas.
             </p>
           </div>
         </div>
-        <div class="with-img">
+        <div class="with-img align-center">
           <div>
             <h5>Objetivos</h5>
             <ul>
-              <li>Reducir la sensación de cansancio y dificultad respiratoria</li>
               <li>Expectoración</li>
               <li>Mejorar la higiene bronquial</li>
-              <li>Volver a adquirir seguridad durante el ejercicio físico</li>
-              <li>Mejorar la función pulmonar</li>
               <li>Reducir broncoespasmo</li>
               <li>Reducir el riesgo de infecciones e ingresos hospitalarios</li>
+              <li>Reducir uso de medicación</li>
+              <li>Mejorar patrón respiratorio</li>
             </ul>
           </div>
           <img src="./img/kid_4.webp" alt="Respiratory photo">
@@ -406,29 +413,23 @@
           Sus beneficios son notables en patologías como:
         </p>
         <ul>
+          <li>Catarros de vía aérea superior</li>
+          <li>Respiradores orales</li>
           <li>Bronquiolitis</li>
           <li>Bronquitis</li>
           <li>Discinesia Ciliar primaria</li>
           <li>Displasia broncopulmonar</li>
           <li>Prematuros</li>
-          <li>EPOC</li>
-          <li>Bronquiectasias</li>
           <li>Neumonías</li>
+          <li>Rinitis</li>
+          <li>Sinuitis</li>
           <li>Atelectasias</li>
           <li>Asma</li>
-          <li>Trasplante pulmonar</li>
           <li>Fibrosis quística</li>
           <li>Enfermedades neurológicas y neuromusculares</li>
-          <li>Procesos oncológicos y degenerativos</li>
           <li>Alteraciones torácicas</li>
         </ul>
-        <div class="with-img">
-          <img src="./img/respi.webp" alt="Respiratory photo">
-          <div>
-            <p>
-              Realizamos programas de rehabilitación pulmonar para pacientes con EPOC, que son adaptados y progresivos,
-              y que consiguen mejorar en gran medida su sintomatología y calidad de vida.
-            </p>
+        <div>
             <p>
               Hemos realizado un convenio con la
               <a href="https://www.fqcastillayleon.org/" target="_blank">Asociación de Fibrosis Quística de Castilla y
@@ -440,13 +441,65 @@
               la información actualizada sobre esta patología.
             </p>
           </div>
-        </div>
         <p class="name">
           Utilizamos técnicas actualizadas y basadas en la evidencia científica, ello permite ver mejoras en la misma
           sesión
           además para nosotros es importante la educación a los familiares y pacientes de forma que entiendan la terapia
           y
           puedan mantener los efectos de la misma durante un largo período de tiempo.
+        </p>
+      </div>
+
+      <div id="respiratoria" class="tabcontent">
+        <h4>Fisioterapia respiratoria en adultos</h4>
+        <h5>¿Qué es?</h5>
+        <div class="with-img align-end">
+          <img src="./img/respi.webp" alt="Respiratory photo">
+          <div>
+            <p>
+              Esta especialidad trata de prevenir y tratar la sintomatología de adultos con patologías respiratorias.
+               Damos herramientas para el control de este tipo de enfermedades.
+            </p>
+            <p>
+              Consta de un gran número de técnicas entre las que se incluyen: higiene de vía aérea superior e inferior,
+               transporte de secreciones y evacuación de las mismas, reeducación del patrón respiratorio, rehabilitación pulmonar…
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h5>Objetivos</h5>
+            <ul>
+              <li>Reducir la sensación de cansancio y dificultad respiratoria</li>
+              <li>Expectoración</li>
+              <li>Mejorar la higiene bronquial</li>
+              <li>Volver a adquirir seguridad durante el ejercicio físico</li>
+              <li>Mejorar la función pulmonar</li>
+              <li>Reducir broncoespasmo</li>
+              <li>Reducir el riesgo de infecciones e ingresos hospitalarios</li>
+              <li>Reducir necesidad de antibioterapia y otros fármacos</li>
+            </ul>
+          </div>
+        </div>
+        <h5>Beneficios</h5>
+        <p>
+          Sus beneficios son notables en patologías como:
+        </p>
+        <ul>
+          <li>Bronquiectasias</li>
+          <li>Neumonías</li>
+          <li>Asma</li>
+          <li>Rinitis</li>
+          <li>Sinuitis</li>
+          <li>Transplante pulmonar</li>
+          <li>Fibrosis quística</li>
+          <li>Enfermedades neurológicas y neuromusculares</li>
+          <li>Procesos oncológicos y degenerativos</li>
+          <li>Alteraciones torácicas</li>
+          <li>Atelectasias</li>
+        <p class="name">
+          Realizamos programas de rehabilitación pulmonar para pacientes con EPOC y Asma, que son adaptados y progresivos, 
+          y que consiguen mejorar en gran medida su sintomatología y calidad de vida.
         </p>
       </div>
 
@@ -468,8 +521,62 @@
       <h3>Opiniones</h3>
       <div class="reviews-section">
         <div class="review-card">
-          <a href="https://maps.app.goo.gl/Wf61GRdYz6MELWs4A" target="_blank">
+          <a href="https://maps.app.goo.gl/i8zJx6FUVgWK39DZ8" target="_blank">
             <img src="./img/woman2.png" alt="User icon" width="50px" height="50px">
+            <p class="user-name">Mireya</p>
+            <div class="stars">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+            </div>
+            <p>
+             Paula nos enseñó la mejor forma para bajar la inflamación en las vías respiratorias bajas, 
+             haciendo de forma efectiva lavados nasales y nebulizaciones. Mil gracias.
+            </p>
+          </a>
+        </div>
+        <div class="review-card">
+          <a href="https://maps.app.goo.gl/8usBbLSJPLEcDdka7" target="_blank">
+            <img src="./img/woman1.png" alt="User icon" width="50px" height="50px">
+            <p class="user-name">Teresa</p>
+            <div class="stars">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+            </div>
+            <p>
+              Ayudó muchísimo a mi bebé de dos meses. Tuvo una bronquiolitis y los mocos no se iban 
+              de ninguna manera. Gracias a ella el bebé ahora está estupendamente y casi sin mocos!
+            </p>
+          </a>
+        </div>
+        <div class="review-card">
+          <a href="https://maps.app.goo.gl/CdBf5rDStbnJw3Q47" target="_blank">
+            <img src="./img/woman2.png" alt="User icon" width="50px" height="50px">
+            <p class="user-name">Rocío</p>
+            <div class="stars">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+              <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
+            </div>
+            <p>
+              Llevamos a mi padre con problemas de EPOC tras estar ingresado por neumonía casi un mes, 
+              tras su consulta y el trabajo que hemos hecho en casa, hemos notado una gran mejoría, le cuesta 
+              menos sacar los mocos, tiene mejor la saturación por lo que anda mejor, se fatiga menos, se 
+              atraganta mucho menos comiendo... Pensaba que sólo trabajaba con niños y ha sido un gran descubrimiento
+               saber que también trabaja con adultos, muchas veces no sabemos donde acudir.
+            </p>
+          </a>
+        </div>
+        <div class="review-card">
+          <a href="https://maps.app.goo.gl/Wf61GRdYz6MELWs4A" target="_blank">
+            <img src="./img/woman1.png" alt="User icon" width="50px" height="50px">
             <p class="user-name">Sandra</p>
             <div class="stars">
               <img src="./img/star.png" alt="Star icon" width="25px" height="25px">
