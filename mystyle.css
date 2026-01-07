@@ -943,6 +943,10 @@ section.legal h3 {
     align-items: flex-end !important;
   }
 
+  .align-center {
+    align-items: center !important;
+  }
+
   .contact-section {
     flex-direction: row;
     width: 80%;
