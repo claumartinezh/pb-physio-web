@@ -134,7 +134,7 @@ section {
   padding: 40px 20px;
   background-size: cover;
   height: auto;
-  background-image: url('./img/banner_mobile.webp');
+  background-image: url('./img/banner_2026_mobile.png');
   text-shadow: 1px 1px black;
   color: #FFF;
 }
@@ -247,7 +247,7 @@ p .study {
 
 .timetable {
   list-style: none;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -361,6 +361,10 @@ section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6) {
   color: #CC0099;
   margin-top: 0;
   font-size: 18px;
+}
+
+.course p {
+  font-size: 16px;
 }
 
 .course ul {
@@ -593,7 +597,7 @@ footer h4 {
   transition: 0.3s;
   font-size: 17px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Cabin';
   margin: 5px;
   border-bottom-right-radius: unset;
@@ -873,7 +877,7 @@ section.legal h3 {
   .title-info {
     padding: 50px 130px;
     height: 400px;
-    background-image: url('./img/banner.webp');
+    background-image: url('./img/banner_2026.png');
   }
 
   .info-section p {
@@ -981,12 +985,20 @@ section.legal h3 {
     margin-top: 3rem;
   }
 
+  .contact-card {
+    width: 350px;
+  }
+
   .reviews-section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
+
+  .course p {
+    font-size: 18px;
+  }
 }
 
 @keyframes fadeInUp {

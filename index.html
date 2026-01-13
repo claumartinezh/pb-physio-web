@@ -124,7 +124,6 @@
   <main>
     <div class="summary">
       <div class="contact-card schedule">
-        <img src="./img/schedule.svg" alt="Schedule icon" width="50px" height="50px">
         <div>
           <p>Horario</p>
           <p>9:00-15:00 lunes, miércoles y viernes</p>
@@ -235,17 +234,17 @@
 
     <a name="services">&nbsp;</a>
     <section>
-      <h3>Servicios</h3>
+      <h3>Servicios de fisioterapia</h3>
       <div class="tabs">
-        <button class="tablinks active" onclick="selectTab(event, 'neuro')"><img src="img/brain.svg" alt="Brain icon"
-            width="32px" height="32px"><span>Fisioterapia neurológica</span></button>
-        <button class="tablinks" onclick="selectTab(event, 'infantil')"><img src="img/kid.png" alt="Kid icon"
-            width="32px" height="32px"><span>Fisioterapia infantil</span></button>
-        <button class="tablinks" onclick="selectTab(event, 'respi-infantil')"><img src="img/bronchus.png" alt="Lungs icon"
-            width="32px" height="32px"><span>Fisioterapia respiratoria infantil</span></button>
-        <button class="tablinks" onclick="selectTab(event, 'respiratoria')"><img src="img/lungs.svg" alt="Lungs icon"
-            width="32px" height="32px"><span>Fisioterapia respiratoria adultos</span></button>
-        <button class="tablinks" onclick="selectTab(event, 'online')"><img src="img/doctor.svg" alt="Online icon"
+        <button title="Fisioterapia neurológica" class="tablinks active" onclick="selectTab(event, 'neuro')"><img src="img/brain.svg" alt="Brain icon"
+            width="32px" height="32px"><span>F. Neurológica</span></button>
+        <button title="Fisioterapia infantil" class="tablinks" onclick="selectTab(event, 'infantil')"><img src="img/kid.png" alt="Kid icon"
+            width="32px" height="32px"><span>F. Infantil</span></button>
+        <button title="Fisioterapia respiratoria infantil" class="tablinks" onclick="selectTab(event, 'respi-infantil')"><img src="img/bronchus.png" alt="Lungs icon"
+            width="32px" height="32px"><span>F. Respiratoria infantil</span></button>
+        <button title="Fisioterapia respiratoria adultos" class="tablinks" onclick="selectTab(event, 'respiratoria')"><img src="img/lungs.svg" alt="Lungs icon"
+            width="32px" height="32px"><span>F. Respiratoria adultos</span></button>
+        <button title="Consultas online" class="tablinks" onclick="selectTab(event, 'online')"><img src="img/doctor.svg" alt="Online icon"
             width="32px" height="32px"><span>Consultas online</span></button>
       </div>
 
@@ -377,8 +376,8 @@
           <img src="./img/kid_3.webp" alt="Respiratory photo">
           <div>
             <p>
-              Esta especialidad trata de prevenir y reducir la sintomatología respiratoria de lactantes, 
-              niños y favoreciendo su desarrollo descanso y alimentación.
+              Esta especialidad trata de prevenir y reducir la sintomatología respiratoria de lactantes y niños, 
+              favoreciendo su desarrollo, descanso y alimentación.
             </p>
             <p>
               Consta de un gran número de técnicas entre las que se incluyen: lavados nasales, transporte de secreciones
@@ -390,7 +389,7 @@
             </p>
             <p>
               Trabajamos en el correcto desarrollo de la zona orofacial, y en todos aquellos niños respiradores orales en 
-              los que podemos prevenir problemas a futuro. Tratamos otitis recurrentes, patologías de adenoide y amígdalas.
+              los que podemos prevenir problemas a futuro. Tratamos otitis recurrentes, patologías de adenoides y amígdalas.
             </p>
           </div>
         </div>
@@ -683,11 +682,11 @@
           <img class="course-image" src="./img/nose.png" alt="Nose" width="80px" height="80px">
           <div class="course-front-info">
             <div>
-              <h4>6ª Edición: Taller de fisioterapia respiratoria</h4>
+              <h4>7ª Edición: Taller de fisioterapia respiratoria</h4>
               <p class="course-subtitle"><b>STOP MOCOS</b></p>
             </div>
-            <p>Miércoles 7 de noviembre de 2025 18:00-19:30 en <a href="https://goo.gl/maps/JLsXa1L3w2nwyc918"
-                target="_blank">Centro Eqilibrio</a> (Burgos)</p>
+            <p>Miércoles 21 de enero de 2026 18:00-19:30 en <a href="https://maps.app.goo.gl/WYCPQDnnjPkNZMnZ7"
+                target="_blank">Espacio de maternidad Raquel Jorreto Matrona</a> (Burgos)</p>
             <p class="course-subinfo">
               Dirigido a madres y padres de niños/as de 0 a 2 años.
               Precio <a class="price">15€</a>
@@ -718,6 +717,40 @@
           <img src="./img/down-arrow.png" class="show arrow-icon" />
         </a>
       </p>
+      <div class="course hide">
+        <div id="front-7" onclick="handleFlip(7)" class="cardFront course-content">
+          <img class="course-flip" src="./img/flip_forward.svg" alt="flip" width="20px" height="20px">
+          <img class="course-image" src="./img/nose.png" alt="Nose" width="80px" height="80px">
+          <div class="course-front-info">
+            <div>
+              <h4>6ª Edición: Taller de fisioterapia respiratoria</h4>
+              <p class="course-subtitle"><b>STOP MOCOS</b></p>
+            </div>
+            <p>Miércoles 7 de noviembre de 2025 18:00-19:30 en <a href="https://goo.gl/maps/JLsXa1L3w2nwyc918"
+                target="_blank">Centro Eqilibrio</a> (Burgos)</p>
+            <p class="course-subinfo">
+              Dirigido a madres y padres de niños/as de 0 a 2 años.
+              Precio <a class="price">15€</a>
+            </p>
+          </div>
+        </div>
+        <div id="back-7" onclick="handleFlip(7)" class="cardBack">
+          <ul>
+            <li><img src="img/check.png" alt="check" width="15px" height="15px">Os ayudaremos a conocer el sistema
+              respiratorio de vuestro hijo</li>
+            <li><img src="img/check.png" alt="check" width="15px" height="15px">¿Qué ocurre cuando mi hijo tiene mocos?
+            </li>
+            <li><img src="img/check.png" alt="check" width="15px" height="15px">¿Qué puedo hacer para ayudarle?</li>
+            <li><img src="img/check.png" alt="check" width="15px" height="15px">Tipos de lavados nasales, nebulizaciones
+              y
+              sueros, ¿Cuándo debo usarlos?</li>
+            <li><img src="img/check.png" alt="check" width="15px" height="15px">Señales de alerta</li>
+            <li><img src="img/check.png" alt="check" width="15px" height="15px">Cuándo acudir al fisioterapia
+              respiratorio
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="course hide">
         <div id="front-6" onclick="handleFlip(6)" class="cardFront course-content">
           <img class="course-flip" src="./img/flip_forward.svg" alt="flip" width="20px" height="20px">
@@ -911,8 +944,7 @@
     <section>
       <h3 class="contact-title">Contacto</h3>
       <div class="contact-section">
-        <img src="./img/contact_1.webp" alt="Contact image" class="contact-photo-horizontal">
-        <img src="./img/kid_5.jpg" alt="Contact image" class="contact-photo-vertical">
+        <img src="./img/contact_2.webp" alt="Contact image" class="contact-photo-vertical">
         <div class="contact-info">
           <div class="timetable-container">
             <div class="contact-card">
@@ -967,7 +999,6 @@
             </a>
           </div>
         </div>
-        <img src="./img/contact_2.webp" alt="Contact image" class="contact-photo-vertical">
       </div>
       </div>
     </section>
@@ -989,9 +1020,6 @@
     <div>
       <p class="footer-text">Colaboraciones</p>
       <div class="collabs-list spaced">
-        <a href="https://edades.eu/burgos/" target="_blank" rel="noopener noreferrer">
-          <img src="./img/edades.png" alt="Logo Edades" width="250px" class="collab-image">
-        </a>
         <a href="https://bineure.com/" target="_blank" rel="noopener noreferrer">
           <img src="./img/bineure.png" alt="Logo Bineure" width="250px" class="collab-image">
         </a>
